@@ -6,13 +6,34 @@ function App() {
   return (
     <div className="App">
       <div className="parent">
-        <div className="A">Блок № 1</div>
-        <div className="B">Блок № 2</div>
-        <div className="C">Блок № 3</div>
-        <div className="D">Блок № 4</div>
-        <div className="E">Блок № 5</div>
-        <div className="F">Блок № 6</div>
-        <div className="G">Блок № 7</div>
+        <div className="A">
+        <div class="base-m">
+          <div className="menu">
+            <div className="m1"><a href="#">Главная</a></div>
+            <div className="m2"><a href="#">Скилы</a></div>
+            <div className="m3"><a href="#">Работы</a></div>
+            <div className="m4"><a href="#">Контакты</a></div>
+          </div>
+        </div>
+        </div>
+        <div className="B">
+          <div class="baseB"></div>
+        </div>
+        <div className="C">
+          <div class="base">22</div>
+        </div>
+        <div className="D">
+          <div class="base"></div>
+        </div>
+        <div className="E">
+          <div class="base"></div>
+        </div>
+        <div className="F">
+          <div class="base"></div>
+        </div>
+        <div className="G">
+          <div class="base"></div>
+        </div>
       </div>
     </div>
   );
