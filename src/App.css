@@ -9,11 +9,9 @@
 .parent {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5% 1fr 1.7fr 2fr 1fr 1fr 1fr;
   grid-template-areas: "A" "B" "C" "D" "E" "F" "G";
   background-color: white;
-  /*align-items: center;*/
-  /*justify-content: center;*/
   color: white;
   border: 3px solid black;
 }
@@ -35,8 +33,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-          ". . . . . menu menu menu menu menu menu menu";
+  grid-template-areas: ". . . . . menu menu menu menu menu menu menu";
   grid-area: base-m;
 }
 
@@ -46,9 +43,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: "m1 m2 m3 m4";
   grid-area: menu;
-  /*background-color: yellow;*/
   border: 1px solid black;
-  /*grid-column-gap: 1%;*/
   align-self: center;
 }
 
@@ -80,10 +75,10 @@ a:hover {
 .B {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 10% 80% 10%;
   grid-template-areas:
           ". . . . . . . . . . . ."
-          ". base base base base base base base base base base ."
+          ". baseB baseB baseB baseB baseB baseB baseB baseB baseB baseB ."
           ". . . . . . . . . . . .";
   grid-area: B;
   background-color: pink;
@@ -92,36 +87,232 @@ a:hover {
 .baseB {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-          ". . . . . menu menu menu menu menu menu menu";
-  grid-area: base;
-  background-color: silver;
+          ". . . . . . . fB fB fB fB ."
+          ". rB rB rB rB . . fB fB fB fB ."
+          ". . . . . . . fB fB fB fB .";
+  grid-area: baseB;
   border: 1px solid black;
+}
+
+.resume {
+  grid-area: rB;
+  background-color: gainsboro;
+  color: black;
+  text-align: left;
+}
+
+.foto {
+  grid-area: fB;
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }
 
 .C {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 10% 80% 10%;
   grid-template-areas:
           ". . . . . . . . . . . ."
-          ". base base base base base base base base base base ."
+          ". baseC baseC baseC baseC baseC baseC baseC baseC baseC baseC ."
           ". . . . . . . . . . . .";
   grid-area: C;
-  background-color: yellow;
+  background-color: lightgreen;
 }
+
+.baseC {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: ". . . . . sC sC . . . . ."
+    "iC iC iC iC iC iC iC iC iC iC iC iC";
+    grid-area: baseC;
+    /*background-color: yellow;*/
+    border: 1px solid black;
+}
+
+.skill {
+    grid-area: sC;
+    align-content: start;
+    align-self: start;background-color: gainsboro;
+    color: black;
+    font-weight: bold;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "i1 i1 . i2 i2 . i3 i3";
+    grid-area: iC;
+    /*background-color: darkmagenta;*/
+    border: 1px solid black;
+}
+
+.i1 {
+    grid-area: i1;
+    background-color: white;
+    border-right: 1px solid red;
+}
+
+.i2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "i21"
+    "i22";
+    grid-area: i2;
+    background-color: goldenrod;
+}
+
+.i21 {
+    grid-area: i21;
+    background-color: white;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+}
+
+.i22 {
+    grid-area: i22;
+    background-color: gainsboro;
+    border-right: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+}
+
+.i3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "i31"
+    "i32";
+    grid-area: i3;
+    background-color: silver;
+}
+
+.i31 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: ". i311 ."
+    "i312 i312 i312";
+    grid-area: i31;
+    background-color: white;
+}
+
+.i311 {
+    grid-area: i311;
+    background-color: gainsboro;
+}
+
+.i312 {
+    grid-area: i312;
+    background-color: gainsboro;
+    color: black;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+
+.i32 {
+    grid-area: i32;
+    background-color: gainsboro;
+    color: black;
+    font-size: 80%;
+    font-weight: bold;
+}
+
 
 .D {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 10% 80% 10%;
   grid-template-areas:
           ". . . . . . . . . . . ."
-          ". base base base base base base base base base base ."
+          ". baseD baseD baseD baseD baseD baseD baseD baseD baseD baseD ."
           ". . . . . . . . . . . .";
   grid-area: D;
-  background-color: darkmagenta;
+  background-color: #FFBBFF;
+}
+
+.baseD {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: ". . . . . jD jD . . . . ."
+    "eD eD eD eD eD eD eD eD eD eD eD eD";
+    grid-area: baseD;
+    /*background-color: yellow;*/
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.job {
+     grid-area: jD;
+     align-content: start;
+     align-self: start;
+     background-color: gainsboro;
+     color: black;
+     font-weight: bold;
+ }
+
+.examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "e1 e1 e1 e2 e2 e2 e2";
+    /*border: 1px solid black;*/
+    grid-area: eD;
+    /*background-color: green;*/
+}
+
+.example1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: "e11 e11 e11"
+    "e12 e12 e12";
+    grid-area: e1;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+.example11 {
+    grid-area: e11;
+    background-color: #BEBEBE;
+}
+
+.example12 {
+    grid-area: e12;
+    background-color: gainsboro;
+}
+
+.example2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: ". e21 e21 e21"
+    ". e22 e22 e22";
+    grid-area: e2;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /*background-color: dodgerblue;*/
+}
+
+.example21 {
+    grid-area: e21;
+    background-color: #BEBEBE;
+}
+
+.example22 {
+    grid-area: e22;
+    background-color: gainsboro;
 }
 
 .E {

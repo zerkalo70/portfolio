@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo1 from './logo1.jpg';
 import './App.css';
 
 function App() {
@@ -17,13 +17,56 @@ function App() {
         </div>
         </div>
         <div className="B">
-          <div class="baseB"></div>
+          <div class="baseB">
+            <div className="resume">
+              <span>Привет!<br/> Меня зовут Петров Сергей.<br/> Я front-and разработчик.</span>
+            </div>
+            <div className="foto">
+              <img src={logo1} alt="this is Logo1 image"/>
+            </div>
+          </div>
         </div>
         <div className="C">
-          <div class="base">22</div>
+          <div class="baseC">
+            <div className="skill">
+              <span>Мои скилы</span>
+            </div>
+            <div className="info">
+              <div className="i1"></div>
+              <div className="i2">
+                <div className="i21"></div>
+                <div className="i22"></div>
+              </div>
+              <div className="i3">
+                <div className="i31">
+                  <div className="i311"></div>
+                  <div className="i312">
+                    <span>React</span>
+                  </div>
+                </div>
+                <div className="i32">
+                  <span>Подробное описание<br/> навыка</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="D">
-          <div class="base"></div>
+          <div class="baseD">
+            <div className="job">
+              <span>Мои работы</span>
+            </div>
+            <div className="examples">
+              <div className="example1">
+                <div className="example11"></div>
+                <div className="example12"></div>
+              </div>
+              <div className="example2">
+                <div className="example21"></div>
+                <div className="example22"></div>
+              </div>
+            </div>
+        </div>
         </div>
         <div className="E">
           <div class="base"></div>
