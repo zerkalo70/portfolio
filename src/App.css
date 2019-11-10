@@ -274,7 +274,6 @@ a:hover {
     grid-template-areas: "e11 e11 e11"
     "e12 e12 e12";
     grid-area: e1;
-    background-color: yellow;
     border: 1px solid red;
 }
 
