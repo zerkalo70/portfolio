@@ -105,11 +105,9 @@ a:hover {
 
 .foto {
   grid-area: fB;
-}
-
-img {
-  height: 100%;
-  width: 100%;
+    background-image: url('logo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .C {
@@ -313,13 +311,9 @@ img {
     ". kn ."
     ". . .";
     grid-area: e21;
-    background: url('image3.jpg');
-    background-position: 80% 20%;
-}
-
-image3.jpg {
-    width: 50%;
-    height: 100%;
+    background-image: url('image3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .kn{
@@ -390,13 +384,13 @@ span2 {
   background-color: blue;
 }
 
-.base {
+.baseG {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
           ". . . . . menu menu menu menu menu menu menu";
-  grid-area: base;
+  grid-area: baseG;
   /*background-color: silver;*/
   border: 1px solid black;
 }
