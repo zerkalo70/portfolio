@@ -306,15 +306,54 @@ img {
 }
 
 .example21 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% 20% 40%;
+    grid-template-areas: ". . ."
+    ". kn ."
+    ". . .";
     grid-area: e21;
+    background: url('image3.jpg');
+    background-position: 80% 20%;
+}
+
+image3.jpg {
+    width: 50%;
+    height: 100%;
+}
+
+.kn{
+    grid-area: kn;
     background-color: #BEBEBE;
 }
 
 .example22 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35% 60% 5%;
+    grid-template-areas:
+    ". sp1 sp1 sp1 sp1 sp1 sp1 . . . . ."
+    ". sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 ."
+    ". . . . . . . . . . . .";
     grid-area: e22;
     background-color: gainsboro;
+    color: black;
+    font-size: 80%;
+    font-weight: bold;
 }
 
+span1 {
+    grid-area: sp1;
+    background-color: #BEBEBE;
+    align-self: center;
+}
+
+span2 {
+    grid-area: sp2;
+    background-color: #BEBEBE;
+    align-self: stretch;
+    text-align: left;
+}
 .E {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
