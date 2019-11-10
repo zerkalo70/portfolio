@@ -79,17 +79,14 @@ function App() {
         </div>
         <div className="E">
           <div className="baseE">
-
           </div>
         </div>
         <div className="F">
           <div className="baseF">
-
           </div>
         </div>
         <div className="G">
           <div className="baseG">
-
           </div>
         </div>
       </div>
