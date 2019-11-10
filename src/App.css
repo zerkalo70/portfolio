@@ -129,7 +129,7 @@ a:hover {
     grid-template-areas: ". . . . . sC sC . . . . ."
     "iC iC iC iC iC iC iC iC iC iC iC iC";
     grid-area: baseC;
-    /*background-color: yellow;*/
+    background-color: yellow;
     border: 1px solid black;
 }
 
