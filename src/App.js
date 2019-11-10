@@ -1,6 +1,4 @@
 import React from 'react';
-import logo1 from './logo1.jpg';
-import image3 from './image3.jpg';
 import './App.css';
 
 function App() {

@@ -245,7 +245,6 @@ a:hover {
     grid-template-areas: ". . . . . jD jD . . . . ."
     "eD eD eD eD eD eD eD eD eD eD eD eD";
     grid-area: baseD;
-    /*background-color: yellow;*/
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -265,9 +264,7 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "e1 e1 e1 e2 e2 e2 e2";
-    /*border: 1px solid black;*/
     grid-area: eD;
-    /*background-color: green;*/
 }
 
 .example1 {
@@ -300,7 +297,6 @@ a:hover {
     grid-area: e2;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    /*background-color: dodgerblue;*/
 }
 
 .example21 {
