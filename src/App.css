@@ -354,10 +354,21 @@ span2 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
           ". . . . . . . . . . . ."
-          ". base base base base base base base base base base ."
+          ". baseE baseE baseE baseE baseE baseE baseE baseE baseE baseE ."
           ". . . . . . . . . . . .";
   grid-area: E;
   background-color: darkgoldenrod;
+}
+
+.baseE {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            ". . . . . menu menu menu menu menu menu menu";
+    grid-area: baseE;
+    background-color: greenyellow;
+    border: 1px solid black;
 }
 
 .F {
@@ -366,10 +377,21 @@ span2 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
           ". . . . . . . . . . . ."
-          ". base base base base base base base base base base ."
+          ". baseF baseF baseF baseF baseF baseF baseF baseF baseF baseF ."
           ". . . . . . . . . . . .";
   grid-area: F;
   background-color: deeppink;
+}
+
+.baseF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            ". . . . . menu menu menu menu menu menu menu";
+    grid-area: baseF;
+    background-color: lawngreen;
+    border: 1px solid black;
 }
 
 .G {
@@ -378,7 +400,7 @@ span2 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
           ". . . . . . . . . . . ."
-          ". base base base base base base base base base base ."
+          ". baseG baseG baseG baseG baseG baseG baseG baseG baseG baseG ."
           ". . . . . . . . . . . .";
   grid-area: G;
   background-color: blue;
@@ -391,7 +413,7 @@ span2 {
   grid-template-areas:
           ". . . . . menu menu menu menu menu menu menu";
   grid-area: baseG;
-  /*background-color: silver;*/
+  background-color: silver;
   border: 1px solid black;
 }
 
