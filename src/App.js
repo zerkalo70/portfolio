@@ -3,7 +3,6 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
       <div className="parent">
         <div className="A">
         <div className="base-m">
@@ -90,7 +89,6 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

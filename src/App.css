@@ -10,8 +10,15 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5% 1fr 1.7fr 2fr 1fr 1fr 1fr;
-  grid-template-areas: "A" "B" "C" "D" "E" "F" "G";
+  grid-template-areas: "A"
+  "B"
+  "C"
+  "D"
+  "E"
+  "F"
+  "G";
   background-color: white;
+    text-align: center;
   color: white;
   border: 3px solid black;
 }
