@@ -19,8 +19,7 @@ function App() {
             <div className="resume">
               <span>Привет!<br/> Меня зовут Петров Сергей.<br/> Я front-and разработчик.</span>
             </div>
-            <div className="foto">
-            </div>
+            <div className="foto"></div>
           </div>
         </div>
         <div className="C">

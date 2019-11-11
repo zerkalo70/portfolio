@@ -9,7 +9,7 @@
 .parent {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5% 1fr 1.7fr 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 4fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "A"
   "B"
   "C"
@@ -81,33 +81,33 @@ a:hover {
 
 .B {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas:
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
           ". . . . . . . . . . . ."
           ". baseB baseB baseB baseB baseB baseB baseB baseB baseB baseB ."
           ". . . . . . . . . . . .";
   grid-area: B;
-  background-color: pink;
+    background-color: pink;
 }
 
 .baseB {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-          ". . . . . . . fB fB fB fB ."
-          ". rB rB rB rB . . fB fB fB fB ."
-          ". . . . . . . fB fB fB fB .";
-  grid-area: baseB;
-  border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+          ". rB rB rB rB . . fB fB fB fB .";
+    grid-area: baseB;
+    border: 1px solid black;
+    height: 100%;
 }
 
 .resume {
   grid-area: rB;
-  background-color: gainsboro;
-  color: black;
-  text-align: left;
+    background-color: gainsboro;
+    color: black;
+    text-align: left;
+    align-self: center;
 }
 
 .foto {
