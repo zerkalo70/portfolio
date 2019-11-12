@@ -9,7 +9,7 @@
 .App {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 20% 80% 100% 150% 50% 50% 50%;
+  grid-template-rows: 20% 100% 150% 200% 50% 50% 50%;
   grid-template-areas: "A A A A A A A A A A A A"
   "B B B B B B B B B B B B"
   "C C C C C C C C C C C C"
