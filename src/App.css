@@ -114,9 +114,10 @@ a:hover {
 
 .foto {
   grid-area: fB;
-    background-image: url('logo1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    /*background-image: url('logo1.jpg');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    background-color: #BEBEBE;
 }
 
 .C {
@@ -313,9 +314,10 @@ a:hover {
     ". kn ."
     ". . .";
     grid-area: e21;
-    background-image: url('image3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    /*background-image: url('image3.jpg');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    background-color: #BEBEBE;
 }
 
 .kn{
