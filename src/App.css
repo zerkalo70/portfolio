@@ -251,11 +251,13 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 30% 70%;
-    grid-template-areas: ". . . . . jD jD . . . . ." "eD eD eD eD eD eD eD eD eD eD eD eD";
+    grid-template-areas: ". . . . . jD jD . . . . ."
+    "eD eD eD eD eD eD eD eD eD eD eD eD";
     grid-area: baseD;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    /*border-top: 1px solid black;*/
+    /*border-left: 1px solid black;*/
+    /*border-right: 1px solid black;*/
+    border: 1px solid black;
 }
 
 .job {
@@ -273,86 +275,87 @@ a:hover {
     grid-template-rows: 1fr;
     grid-template-areas: "e1 e1 e1 e2 e2 e2 e2";
     grid-area: eD;
+    border: 1px solid black;
 }
 
-.example1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 75% 25%;
-    grid-template-areas: "e11 e11 e11"
-    "e12 e12 e12";
-    grid-area: e1;
-    border: 1px solid red;
-}
+/*.example1 {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: 75% 25%;*/
+/*    grid-template-areas: "e11 e11 e11"*/
+/*    "e12 e12 e12";*/
+/*    grid-area: e1;*/
+/*    !*border: 1px solid red;*!*/
+/*}*/
 
-.example11 {
-    grid-area: e11;
-    background-color: #BEBEBE;
-}
+/*.example11 {*/
+/*    grid-area: e11;*/
+/*    background-color: #BEBEBE;*/
+/*}*/
 
-.example12 {
-    grid-area: e12;
-    background-color: gainsboro;
-}
+/*.example12 {*/
+/*    grid-area: e12;*/
+/*    background-color: gainsboro;*/
+/*}*/
 
-.example2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 75% 25%;
-    grid-template-areas: ". e21 e21 e21"
-    ". e22 e22 e22";
-    grid-area: e2;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
+/*.example2 {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: 75% 25%;*/
+/*    grid-template-areas: ". e21 e21 e21"*/
+/*    ". e22 e22 e22";*/
+/*    grid-area: e2;*/
+/*    !*border-top: 1px solid black;*!*/
+/*    !*border-bottom: 1px solid black;*!*/
+/*}*/
 
-.example21 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40% 20% 40%;
-    grid-template-areas: ". . ."
-    ". kn ."
-    ". . .";
-    grid-area: e21;
-    /*background-image: url('image3.jpg');*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    background-color: #BEBEBE;
-}
+/*.example21 {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+/*    grid-template-rows: 40% 20% 40%;*/
+/*    grid-template-areas: ". . ."*/
+/*    ". kn ."*/
+/*    ". . .";*/
+/*    grid-area: e21;*/
+/*    !*background-image: url('image3.jpg');*!*/
+/*    !*background-size: cover;*!*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    background-color: #BEBEBE;*/
+/*}*/
 
-.kn{
-    grid-area: kn;
-    background-color: #BEBEBE;
-}
+/*.kn{*/
+/*    grid-area: kn;*/
+/*    background-color: #BEBEBE;*/
+/*}*/
 
-.example22 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 35% 60% 5%;
-    grid-template-areas:
-    ". sp1 sp1 sp1 sp1 sp1 sp1 . . . . ."
-    ". sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 ."
-    ". . . . . . . . . . . .";
-    grid-area: e22;
-    background-color: gainsboro;
-    color: black;
-    font-size: 65%;
-    font-weight: bold;
-    text-align: left;
-}
+/*.example22 {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+/*    grid-template-rows: 35% 60% 5%;*/
+/*    grid-template-areas:*/
+/*    ". sp1 sp1 sp1 sp1 sp1 sp1 . . . . ."*/
+/*    ". sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 ."*/
+/*    ". . . . . . . . . . . .";*/
+/*    grid-area: e22;*/
+/*    background-color: gainsboro;*/
+/*    color: black;*/
+/*    font-size: 65%;*/
+/*    font-weight: bold;*/
+/*    text-align: left;*/
+/*}*/
 
-span1 {
-    grid-area: sp1;
-    background-color: #BEBEBE;
-    align-self: center;
-}
+/*span1 {*/
+/*    grid-area: sp1;*/
+/*    background-color: #BEBEBE;*/
+/*    align-self: center;*/
+/*}*/
 
-span2 {
-    grid-area: sp2;
-    background-color: #BEBEBE;
-    align-self: stretch;
-    text-align: left;
-}
+/*span2 {*/
+/*    grid-area: sp2;*/
+/*    background-color: #BEBEBE;*/
+/*    align-self: stretch;*/
+/*    text-align: left;*/
+/*}*/
 .E {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
