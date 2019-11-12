@@ -5,7 +5,7 @@
 .parent {
   display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 50fr 5fr;
+    grid-template-rows: 3fr 30fr 5fr;
     grid-template-areas: "H"
     "C"
     "F";
@@ -34,7 +34,7 @@
 .content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10fr 10fr 10fr 10fr 10fr;
+    grid-template-rows: 6fr 6fr 6fr 6fr 6fr;
     grid-template-areas: "b1"
     "b2"
     "b3"
