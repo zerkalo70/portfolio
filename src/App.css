@@ -98,7 +98,7 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-          ". rB rB rB rB . . fB fB fB fB .";
+          ". rB rB rB rB . . . fB fB fB .";
     grid-area: baseB;
     border: 1px solid black;
     height: 100%;
