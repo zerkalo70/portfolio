@@ -1,90 +1,32 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-      <div className="App">
-        <div className="A">
-        <div className="base-m">
-          <div className="menu">
-            <div className="m1"><a href="#">Главная</a></div>
-            <div className="m2"><a href="#">Скилы</a></div>
-            <div className="m3"><a href="#">Работы</a></div>
-            <div className="m4"><a href="#">Контакты</a></div>
-          </div>
-        </div>
-        </div>
-        <div className="B">
-          <div className="baseB">
-            <div className="resume">
-              <span>Привет!<br/> Меня зовут Петров Сергей.<br/> Я front-and разработчик.</span>
+      <div className="parent">
+        <header className="header">Header
+            <div className="block-menu">menu</div>
+        </header>
+        <div className="content">
+            <div className="block-1">Блок 1
+                <div className="basis1">база-1</div>
             </div>
-            <div className="foto"></div>
-          </div>
-        </div>
-        <div className="C">
-          <div className="baseC">
-            <div className="skill">
-              <span>Мои скилы</span>
+            <div className="block-2">Блок 2
+                <div className="basis2">база-2</div>
             </div>
-            <div className="info">
-              <div className="i1">
-              </div>
-              <div className="i2">
-                <div className="i21">
-                </div>
-                <div className="i22">
-                </div>
-              </div>
-              <div className="i3">
-                <div className="i31">
-                  <div className="i311">
-                  </div>
-                  <div className="i312">
-                    <span>React</span>
-                  </div>
-                </div>
-                <div className="i32">
-                  <span>Подробное описание<br/> навыка</span>
-                </div>
-              </div>
+            <div className="block-3">Блок 3
+                <div className="basis3">база-3</div>
             </div>
-          </div>
+            <div className="block-4">Блок 4
+                <div className="basis4">база-4</div>
+            </div>
+            <div className="block-5">Блок 5
+                <div className="basis5">база-5</div>
+            </div>
         </div>
-        <div className="D">
-          <div className="baseD">
-              <div className="job">
-                  <span>Мои работы</span>
-              </div>
-              <div className="examples">
-                  <div className="example1">
-                  {/*    <div className="example11"></div>*/}
-                  {/*    <div className="example12"></div>*/}
-                  </div>
-                  {/*<div className="example2">*/}
-                  {/*    <div className="example21">*/}
-                  {/*        <button className="kn">Смотреть</button>*/}
-                  {/*    </div>*/}
-                  {/*    <div className="example22">*/}
-                  {/*        <span1>Название проекта</span1>*/}
-                  {/*        <span2>Краткое описание</span2>*/}
-                  {/*    </div>*/}
-                  {/*</div>*/}
-              </div>
-        </div>
-        </div>
-        <div className="E">
-          <div className="baseE">
-          </div>
-        </div>
-        <div className="F">
-          <div className="baseF">
-          </div>
-        </div>
-        <div className="G">
-          <div className="baseG">
-          </div>
-        </div>
+        <footer className="footer">Footer
+            <div className="basisF">база-5</div>
+        </footer>
       </div>
   );
 }

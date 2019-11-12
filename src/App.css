@@ -2,431 +2,142 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App {
+.parent {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 20% 100% 150% 200% 50% 50% 50%;
-  grid-template-areas: "A A A A A A A A A A A A"
-  "B B B B B B B B B B B B"
-  "C C C C C C C C C C C C"
-  "D D D D D D D D D D D D"
-  "E E E E E E E E E E E E"
-  "F F F F F F F F F F F F"
-  "G G G G G G G G G G G G";
-  background-color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 30fr 3fr;
+    grid-template-areas: "H"
+    "C"
+    "F";
     text-align: center;
-  color: white;
-  border: 3px solid black;
+    color: white;
+    border: 3px solid red;
     grid-row-gap: 3px;
 }
 
-.A {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20% 60% 20%;
-  grid-template-areas:
-  ". . . . . . . . . . . ."
-  ". base-m base-m base-m base-m base-m base-m base-m base-m base-m base-m ."
-  ". . . . . . . . . . . .";
-  grid-area: A;
-  background-color: aqua;
-  height: auto;
-}
-
-.base-m {
-  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ". . . . . menu menu menu menu menu menu menu";
-    grid-area: base-m;
-    /*border: 1px solid black;*/
-}
-
-.menu {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "m1 m2 m3 m4";
-  grid-area: menu;
-  border: 1px solid black;
-  align-self: center;
-}
-
-.m1 {
-  grid-area: m1;
-}
-
-.m2 {
-  grid-area: m2;
-}
-
-.m3 {
-  grid-area: m3;
-}
-
-.m4 {
-  grid-area: m4;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-}
-
-
-.B {
-  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas:
-          ". . . . . . . . . . . ."
-          ". . baseB baseB baseB baseB baseB baseB baseB baseB . ."
-          ". . . . . . . . . . . .";
-  grid-area: B;
-    background-color: pink;
-}
-
-.baseB {
-  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-          ". rB rB rB rB . . . fB fB fB .";
-    grid-area: baseB;
-    border: 1px solid black;
-    height: 100%;
-}
-
-.resume {
-  grid-area: rB;
-    background-color: gainsboro;
-    color: black;
-    text-align: left;
-    align-self: center;
-}
-
-.foto {
-  grid-area: fB;
-    /*background-image: url('logo1.jpg');*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    background-color: #BEBEBE;
-}
-
-.C {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas:
-          ". . . . . . . . . . . ."
-          ". . baseC baseC baseC baseC baseC baseC baseC baseC . ."
-          ". . . . . . . . . . . .";
-  grid-area: C;
-  background-color: lightgreen;
-}
-
-.baseC {
+.header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30% 70%;
-    grid-template-areas: ". . . . . sC sC . . . . ."
-    "iC iC iC iC iC iC iC iC iC iC iC iC";
-    grid-area: baseC;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". bm bm bm bm bm bm bm bm bm bm ."
+    ". . . . . . . . . . . .";
+    grid-area: H;
+    background: lightskyblue;
+}
+
+.block-menu {
+    grid-area: bm;
     border: 1px solid black;
 }
 
-.skill {
-    grid-area: sC;
-    align-content: start;
-    align-self: start;
-    background-color: gainsboro;
-    color: black;
-    font-weight: bold;
-}
-
-.info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "i1 i1 . i2 i2 . i3 i3";
-    grid-area: iC;
-    border: 1px solid black;
-}
-
-.i1 {
-    grid-area: i1;
-    background-color: white;
-    border-right: 1px solid red;
-}
-
-.i2 {
+.content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: "i21"
-    "i22";
-    grid-area: i2;
-    background-color: goldenrod;
+    grid-template-rows: 6fr 6fr 6fr 6fr 6fr;
+    grid-template-areas: "b1"
+    "b2"
+    "b3"
+    "b4"
+    "b5";
+    grid-area: C;
+    grid-row-gap: 2px;
+    background: white;
 }
 
-.i21 {
-    grid-area: i21;
-    background-color: white;
-    border-right: 1px solid red;
-    border-bottom: 1px solid red;
-    border-left: 1px solid red;
-}
-
-.i22 {
-    grid-area: i22;
-    background-color: gainsboro;
-    border-right: 1px solid blue;
-    border-top: 1px solid blue;
-    border-left: 1px solid blue;
-}
-
-.i3 {
+.block-1 {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: "i31"
-    "i32";
-    grid-area: i3;
-    background-color: silver;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 ."
+    ". . . . . . . . . . . .";
+    grid-area: b1;
+    background: gold;
 }
 
-.i31 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: ". i311 ."
-    "i312 i312 i312";
-    grid-area: i31;
-    background-color: white;
-}
-
-.i311 {
-    grid-area: i311;
-    background-color: gainsboro;
-}
-
-.i312 {
-    grid-area: i312;
-    background-color: gainsboro;
-    color: black;
-    font-weight: bold;
-    justify-self: center;
-    align-self: center;
-}
-
-.i32 {
-    grid-area: i32;
-    background-color: gainsboro;
-    color: black;
-    font-size: 80%;
-    font-weight: bold;
-}
-
-
-.D {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas:
-            ". . . . . . . . . . . ."
-            ". . baseD baseD baseD baseD baseD baseD baseD baseD . ."
-            ". . . . . . . . . . . .";
-    grid-area: D;
-    background-color: lightpink;
-}
-
-.baseD {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30% 70%;
-    grid-template-areas: ". . . . . jD jD . . . . ."
-    "eD eD eD eD eD eD eD eD eD eD eD eD";
-    grid-area: baseD;
-    /*border-top: 1px solid black;*/
-    /*border-left: 1px solid black;*/
-    /*border-right: 1px solid black;*/
+.basis1 {
+    grid-area: bas1;
     border: 1px solid black;
 }
 
-.job {
-     grid-area: jD;
-     align-content: start;
-     align-self: start;
-     background-color: gainsboro;
-     color: black;
-     font-weight: bold;
- }
-
-.examples {
+.block-2 {
     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-     grid-template-rows: 1fr;
-     grid-template-areas: "e1 e1 e1 e2 e2 e2 e2";
-     grid-area: eD;
-     border: 1px solid black;
-     background-color: silver;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". bas2 bas2 bas2 bas2 bas2 bas2 bas2 bas2 bas2 bas2 ."
+    ". . . . . . . . . . . .";
+    grid-area: b2;
+    background: brown;
 }
 
-.example1 {
-    display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 75% 25%;
-      grid-template-areas: "e11 e11 e11"
-      "e12 e12 e12";
-      grid-area: e1;
-      border: 1px solid red;
-      background-color: yellow;
-  }
-
-/*.example11 {*/
-/*    grid-area: e11;*/
-/*    background-color: #BEBEBE;*/
-/*}*/
-
-/*.example12 {*/
-/*    grid-area: e12;*/
-/*    background-color: gainsboro;*/
-/*}*/
-
-/*.example2 {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr;*/
-/*    grid-template-rows: 75% 25%;*/
-/*    grid-template-areas: ". e21 e21 e21"*/
-/*    ". e22 e22 e22";*/
-/*    grid-area: e2;*/
-/*    !*border-top: 1px solid black;*!*/
-/*    !*border-bottom: 1px solid black;*!*/
-/*    border: 1px solid green;*/
-/*    background-color: greenyellow;*/
-/*}*/
-
-/*.example21 {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 1fr 1fr;*/
-/*    grid-template-rows: 40% 20% 40%;*/
-/*    grid-template-areas: ". . ."*/
-/*    ". kn ."*/
-/*    ". . .";*/
-/*    grid-area: e21;*/
-/*    !*background-image: url('image3.jpg');*!*/
-/*    !*background-size: cover;*!*/
-/*    !*background-repeat: no-repeat;*!*/
-/*    background-color: #BEBEBE;*/
-/*}*/
-
-/*.kn{*/
-/*    grid-area: kn;*/
-/*    background-color: #BEBEBE;*/
-/*}*/
-
-/*.example22 {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
-/*    grid-template-rows: 35% 60% 5%;*/
-/*    grid-template-areas:*/
-/*    ". sp1 sp1 sp1 sp1 sp1 sp1 . . . . ."*/
-/*    ". sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 sp2 ."*/
-/*    ". . . . . . . . . . . .";*/
-/*    grid-area: e22;*/
-/*    background-color: gainsboro;*/
-/*    color: black;*/
-/*    font-size: 65%;*/
-/*    font-weight: bold;*/
-/*    text-align: left;*/
-/*}*/
-
-/*span1 {*/
-/*    grid-area: sp1;*/
-/*    background-color: #BEBEBE;*/
-/*    align-self: center;*/
-/*}*/
-
-/*span2 {*/
-/*    grid-area: sp2;*/
-/*    background-color: #BEBEBE;*/
-/*    align-self: stretch;*/
-/*    text-align: left;*/
-/*}*/
-.E {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-          ". . . . . . . . . . . ."
-          ". baseE baseE baseE baseE baseE baseE baseE baseE baseE baseE ."
-          ". . . . . . . . . . . .";
-  grid-area: E;
-  background-color: darkgoldenrod;
-}
-
-.baseE {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-            ". . . . . menu menu menu menu menu menu menu";
-    grid-area: baseE;
-    background-color: greenyellow;
+.basis2 {
+    grid-area: bas2;
     border: 1px solid black;
 }
 
-.F {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-          ". . . . . . . . . . . ."
-          ". baseF baseF baseF baseF baseF baseF baseF baseF baseF baseF ."
-          ". . . . . . . . . . . .";
-  grid-area: F;
-  background-color: deeppink;
+.block-3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". bas3 bas3 bas3 bas3 bas3 bas3 bas3 bas3 bas3 bas3 ."
+    ". . . . . . . . . . . .";
+    grid-area: b3;
+    background: fuchsia;
 }
 
-.baseF {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-            ". . . . . menu menu menu menu menu menu menu";
-    grid-area: baseF;
-    background-color: lawngreen;
+.basis3 {
+    grid-area: bas3;
     border: 1px solid black;
 }
 
-.G {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-          ". . . . . . . . . . . ."
-          ". baseG baseG baseG baseG baseG baseG baseG baseG baseG baseG ."
-          ". . . . . . . . . . . .";
-  grid-area: G;
-  background-color: blue;
+.block-4 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". bas4 bas4 bas4 bas4 bas4 bas4 bas4 bas4 bas4 bas4 ."
+    ". . . . . . . . . . . .";
+    grid-area: b4;
+    background: chartreuse;
 }
 
-.baseG {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-          ". . . . . menu menu menu menu menu menu menu";
-  grid-area: baseG;
-  background-color: silver;
-  border: 1px solid black;
+.basis4 {
+    grid-area: bas4;
+    border: 1px solid black;
 }
 
+.block-5 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". bas5 bas5 bas5 bas5 bas5 bas5 bas5 bas5 bas5 bas5 ."
+    ". . . . . . . . . . . .";
+    grid-area: b5;
+    background: darkturquoise;
+}
 
+.basis5 {
+    grid-area: bas5;
+    border: 1px solid black;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". basF basF basF basF basF basF basF basF basF basF ."
+    ". . . . . . . . . . . .";
+    grid-area: F;
+    background: yellow;
+    color: green;
+}
+
+.basisF {
+    grid-area: basF;
+    border: 1px solid black;
+}
