@@ -87,7 +87,7 @@ a:hover {
     grid-template-rows: 10% 80% 10%;
     grid-template-areas:
           ". . . . . . . . . . . ."
-          ". baseB baseB baseB baseB baseB baseB baseB baseB baseB baseB ."
+          ". . baseB baseB baseB baseB baseB baseB baseB baseB . ."
           ". . . . . . . . . . . .";
   grid-area: B;
     background-color: pink;
@@ -126,7 +126,7 @@ a:hover {
   grid-template-rows: 10% 80% 10%;
   grid-template-areas:
           ". . . . . . . . . . . ."
-          ". baseC baseC baseC baseC baseC baseC baseC baseC baseC baseC ."
+          ". . baseC baseC baseC baseC baseC baseC baseC baseC . ."
           ". . . . . . . . . . . .";
   grid-area: C;
   background-color: lightgreen;
@@ -241,7 +241,7 @@ a:hover {
     grid-template-rows: 10% 80% 10%;
     grid-template-areas:
             ". . . . . . . . . . . ."
-            ". baseD baseD baseD baseD baseD baseD baseD baseD baseD baseD ."
+            ". . baseD baseD baseD baseD baseD baseD baseD baseD . ."
             ". . . . . . . . . . . .";
     grid-area: D;
     background-color: lightpink;
