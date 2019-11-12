@@ -57,19 +57,19 @@ function App() {
                   <span>Мои работы</span>
               </div>
               <div className="examples">
-                  <div className="example1">
-                      <div className="example11"></div>
-                      <div className="example12"></div>
-                  </div>
-                  <div className="example2">
-                      <div className="example21">
-                          <button className="kn">Смотреть</button>
-                      </div>
-                      <div className="example22">
-                          <span1>Название проекта</span1>
-                          <span2>Краткое описание</span2>
-                      </div>
-                  </div>
+                  {/*<div className="example1">*/}
+                  {/*    <div className="example11"></div>*/}
+                  {/*    <div className="example12"></div>*/}
+                  {/*</div>*/}
+                  {/*<div className="example2">*/}
+                  {/*    <div className="example21">*/}
+                  {/*        <button className="kn">Смотреть</button>*/}
+                  {/*    </div>*/}
+                  {/*    <div className="example22">*/}
+                  {/*        <span1>Название проекта</span1>*/}
+                  {/*        <span2>Краткое описание</span2>*/}
+                  {/*    </div>*/}
+                  {/*</div>*/}
               </div>
         </div>
         </div>
