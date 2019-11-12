@@ -271,21 +271,22 @@ a:hover {
 
 .examples {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "e1 e1 e1 e2 e2 e2 e2";
-    grid-area: eD;
-    border: 1px solid black;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+     grid-template-areas: "e1 e1 e1 e2 e2 e2 e2";
+     grid-area: eD;
+     border: 1px solid black;
 }
 
 .example1 {
-      display: grid;
+    display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 75% 25%;
       grid-template-areas: "e11 e11 e11"
       "e12 e12 e12";
       grid-area: e1;
       border: 1px solid red;
+      background-color: yellow;
   }
 
 /*.example11 {*/
@@ -308,6 +309,7 @@ a:hover {
     /*border-top: 1px solid black;*/
     /*border-bottom: 1px solid black;*/
     border: 1px solid green;
+    background-color: greenyellow;
 }
 
 /*.example21 {*/
