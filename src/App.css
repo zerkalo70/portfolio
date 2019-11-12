@@ -299,18 +299,18 @@ a:hover {
 /*    background-color: gainsboro;*/
 /*}*/
 
-.example2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 75% 25%;
-    grid-template-areas: ". e21 e21 e21"
-    ". e22 e22 e22";
-    grid-area: e2;
-    /*border-top: 1px solid black;*/
-    /*border-bottom: 1px solid black;*/
-    border: 1px solid green;
-    background-color: greenyellow;
-}
+/*.example2 {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: 75% 25%;*/
+/*    grid-template-areas: ". e21 e21 e21"*/
+/*    ". e22 e22 e22";*/
+/*    grid-area: e2;*/
+/*    !*border-top: 1px solid black;*!*/
+/*    !*border-bottom: 1px solid black;*!*/
+/*    border: 1px solid green;*/
+/*    background-color: greenyellow;*/
+/*}*/
 
 /*.example21 {*/
 /*    display: grid;*/
