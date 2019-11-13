@@ -2,10 +2,10 @@
   text-align: center;
 }
 
-.App {
+.Parent {
   display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 30fr 5fr;
+    grid-template-rows: 1fr 46fr 5fr;
     grid-template-areas: "H"
     "C"
     "F";
@@ -15,7 +15,7 @@
     grid-row-gap: 3px;
 }
 
-.header {
+.Header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 5% 90% 5%;
@@ -31,10 +31,10 @@
     border: 1px solid black;
 }
 
-.content {
+.Content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6fr 6fr 6fr 6fr 6fr;
+    grid-template-rows: 8fr 9fr 10fr 4fr 10fr;
     grid-template-areas: "b1"
     "b2"
     "b3"
@@ -125,7 +125,7 @@
     border: 1px solid black;
 }
 
-.footer {
+.Footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 5% 90% 5%;

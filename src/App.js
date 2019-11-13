@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 
-class App extends React.Component {
-    render = () => {
-        return (
-            <div className="App">
-                <header className="header">Header
+const App=()=>{
+    return (
+            <div className="Parent">
+                <header className="Header">Header
                     <div className="block-menu">menu</div>
                 </header>
-                <div className="content">
+                <div className="Content">
                     <div className="block-1">Блок 1
                         <div className="basis1">база-1</div>
                     </div>
@@ -25,12 +24,11 @@ class App extends React.Component {
                         <div className="basis5">база-5</div>
                     </div>
                 </div>
-                <footer className="footer">Footer
+                <footer className="Footer">Footer
                     <div className="basisF">Footer</div>
                 </footer>
             </div>
         );
-    }
 }
 
 export default App;
