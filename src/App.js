@@ -5,7 +5,14 @@ const App=()=>{
     return (
             <div className="Parent">
                 <header className="Header">Header
-                    <div className="block-menu">menu</div>
+                    <div className="block-menu">
+                        <div className="menu">
+                            <div className="m1"><a href="#">Главная</a></div>
+                            <div className="m2"><a href="#">Скилы</a></div>
+                            <div className="m3"><a href="#">Работы</a></div>
+                            <div className="m4"><a href="#">Контакты</a></div>
+                        </div>
+                    </div>
                 </header>
                 <div className="Content">
                     <div className="block-1">Блок 1

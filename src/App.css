@@ -27,8 +27,56 @@
 }
 
 .block-menu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". . . . . . m m m m m m";
     grid-area: bm;
+    /*border: 1px solid black;*/
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "m1 m2 m3 m4";
+    grid-area: m;
+    align-self: center;
+    color: black ;
+    font-weight: bolder;
     border: 1px solid black;
+}
+
+.m1 {
+    grid-area: m1;
+    text-align: left;
+    /*border: 1px solid greenyellow;*/
+}
+
+.m2 {
+    grid-area: m2;
+    /*border: 1px solid greenyellow;*/
+}
+
+.m3 {
+    grid-area: m3;
+    /*border: 1px solid greenyellow;*/
+}
+
+.m4 {
+    grid-area: m4;
+    text-align: right;
+    /*border: 1px solid greenyellow;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
 }
 
 .Content {
