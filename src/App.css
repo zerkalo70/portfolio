@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.parent {
+.App {
   display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 30fr 5fr;
