@@ -33,7 +33,6 @@
     grid-template-areas:
     ". . . . . . m m m m m m";
     grid-area: bm;
-    /*border: 1px solid black;*/
 }
 
 .menu {
@@ -52,23 +51,19 @@
 .m1 {
     grid-area: m1;
     text-align: left;
-    /*border: 1px solid greenyellow;*/
 }
 
 .m2 {
     grid-area: m2;
-    /*border: 1px solid greenyellow;*/
 }
 
 .m3 {
     grid-area: m3;
-    /*border: 1px solid greenyellow;*/
 }
 
 .m4 {
     grid-area: m4;
     text-align: right;
-    /*border: 1px solid greenyellow;*/
 }
 
 a {
@@ -96,17 +91,37 @@ a:hover {
 .block-1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 5% 90% 5%;
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: ". . . . . . . . . . . ."
     ". bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 ."
     ". . . . . . . . . . . .";
     grid-area: b1;
-    background: gold;
+    background: lightpink;
 }
 
 .basis1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: ". b11 b11 b11 b11 . . b12 b12 b12 b12 .";
     grid-area: bas1;
     border: 1px solid black;
+}
+
+.basis11 {
+    grid-area: b11;
+    align-self: center;
+    font-size: 150%;
+    text-align: left;
+    color: black;
+    font-weight: bolder;
+    background-color: gainsboro;
+}
+
+.basis12 {
+    grid-area: b12;
+    background: url("logo1.jpg");
+    background-size: cover;
 }
 
 .block-2 {

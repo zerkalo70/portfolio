@@ -16,7 +16,14 @@ const App=()=>{
                 </header>
                 <div className="Content">
                     <div className="block-1">Блок 1
-                        <div className="basis1">база-1</div>
+                        <div className="basis1">
+                            <div className="basis11">
+                                <span>Привет!<br/> Меня зовут Петров Сергей.<br/> Я front-and разработчик.</span>
+                            </div>
+                            <div className="basis12">
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                     <div className="block-2">Блок 2
                         <div className="basis2">база-2</div>
