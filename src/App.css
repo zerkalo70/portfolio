@@ -10,7 +10,7 @@
     "C"
     "F";
     text-align: center;
-    color: white;
+    color: black;
     border: 3px solid red;
     grid-row-gap: 3px;
 }
@@ -114,7 +114,7 @@ a:hover {
     font-size: 150%;
     text-align: left;
     color: black;
-    font-weight: bolder;
+    font-weight: bold;
     background-color: gainsboro;
 }
 
@@ -132,12 +132,104 @@ a:hover {
     ". bas2 bas2 bas2 bas2 bas2 bas2 bas2 bas2 bas2 bas2 ."
     ". . . . . . . . . . . .";
     grid-area: b2;
-    background: brown;
+    background: lightgreen;
 }
 
 .basis2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "b21"
+    "b22";
     grid-area: bas2;
     border: 1px solid black;
+}
+
+.basis21 {
+    grid-area: b21;
+    align-self: start;
+    justify-self: center;
+    font-size: 150%;
+    font-weight: bold;
+    background: gainsboro;
+}
+
+.basis22 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "b22a b22a . b22b b22b . b22c b22c";
+    grid-area: b22;
+    border: 1px solid black;
+}
+
+.basis22a {
+    grid-area: b22a;
+    background: white;
+    border-right: 2px solid red;
+}
+
+.basis22b {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "bb1"
+    "bb2";
+    grid-area: b22b;
+    background: yellow;
+}
+
+.bb1 {
+    grid-area: bb1;
+    background: white;
+    border: 2px solid red;
+    border-top: none;
+}
+
+.bb2 {
+    grid-area: bb2;
+    background: gainsboro;
+    border: 2px solid blue;
+    border-bottom: none;
+}
+
+.basis22c {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "bc1"
+    "bc2";
+    grid-area: b22c;
+}
+
+.bc1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". bc11 ."
+    ". bc12 .";
+    grid-area: bc1;
+    background: white;
+}
+
+.bc11 {
+    grid-area: bc11;
+    background: gainsboro;
+}
+
+.bc12 {
+    grid-area: bc12;
+    align-self: center;
+    font-size: 130%;
+    font-weight: bold;
+    background: gainsboro;
+}
+
+.bc2 {
+    grid-area: bc2;
+    font-size: 130%;
+    font-weight: bold;
+    background: gainsboro;
 }
 
 .block-3 {
