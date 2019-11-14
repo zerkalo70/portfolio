@@ -49,7 +49,25 @@ const App=()=>{
                         </div>
                     </div>
                     <div className="block-3">Блок 3
-                        <div className="basis3">база-3</div>
+                        <div className="basis3">
+                            <div className="basis31">
+                                <span>Мои работы</span>
+                            </div>
+                            <div className="basis32">
+                                <div className="basis32a">
+                                    <div className="ba321"></div>
+                                    <div className="ba322"></div>
+                                </div>
+                                <div className="basis32b">
+                                    <div className="bb321">
+                                        <div className="kn1">
+                                        <button>Смотреть</button>
+                                        </div>
+                                    </div>
+                                    <div className="bb322"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="block-4">Блок 4
                         <div className="basis4">база-4</div>
