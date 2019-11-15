@@ -18,7 +18,7 @@ const App=()=>{
                     <div className="block-1">Блок 1
                         <div className="basis1">
                             <div className="basis11">
-                                <span>Привет!<br/> Меня зовут Петров Сергей.<br/> Я front-and разработчик.</span>
+                                <span>Привет!<br/> Меня зовут Петров Сергей.<br/> Я front-end разработчик.</span>
                             </div>
                             <div className="basis12"></div>
                         </div>
@@ -70,7 +70,14 @@ const App=()=>{
                         </div>
                     </div>
                     <div className="block-4">Блок 4
-                        <div className="basis4">база-4</div>
+                        <div className="basis4">
+                            <div className="b41">
+                                <span>Рассматриваю варианты удалённой работы</span>
+                            </div>
+                            <div className="b42">
+                                <span>Нанять меня</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="block-5">Блок 5
                         <div className="basis5">база-5</div>

@@ -5,7 +5,7 @@
 .Parent {
   display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 46fr 5fr;
+    grid-template-rows: 1fr 41fr 5fr;
     grid-template-areas: "H"
     "C"
     "F";
@@ -77,7 +77,7 @@ a:hover {
 .Content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8fr 9fr 12fr 4fr 10fr;
+    grid-template-rows: 8fr 9fr 12fr 2fr 10fr;
     grid-template-areas: "b1"
     "b2"
     "b3"
@@ -268,7 +268,6 @@ a:hover {
     grid-template-rows: 1fr;
     grid-template-areas: "b32a b32a b32a b32a b32a b32b b32b b32b b32b b32b b32b b32b";
     grid-area: b32;
-    /*border: 1px solid black;*/
 }
 
 .basis32a {
@@ -325,12 +324,32 @@ a:hover {
     ". bas4 bas4 bas4 bas4 bas4 bas4 bas4 bas4 bas4 bas4 ."
     ". . . . . . . . . . . .";
     grid-area: b4;
-    background: chartreuse;
+    background: lightyellow;
 }
 
 .basis4 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". . . b41 b41 b41 b41 b41 b41 . . ."
+    ". . . . . b42 b42 . . . . .";
     grid-area: bas4;
     border: 1px solid black;
+}
+.b41 {
+    grid-area: b41;
+    font-size: 150%;
+    font-weight: bold;
+    background: gainsboro;
+    align-self: start;
+}
+
+.b42 {
+    grid-area: b42;
+    font-size: 150%;
+    font-weight: bold;
+    background: gainsboro;
+    align-self: end;
 }
 
 .block-5 {
