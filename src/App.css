@@ -360,12 +360,63 @@ a:hover {
     ". bas5 bas5 bas5 bas5 bas5 bas5 bas5 bas5 bas5 bas5 ."
     ". . . . . . . . . . . .";
     grid-area: b5;
-    background: darkturquoise;
+    background: lightpink;
 }
 
 .basis5 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: ". . . . . b51 b51 . . . . ."
+    ". . . b52 b52 b52 b52 b52 b52 . . ."
+    ". . . . . b53 b53 . . . . .";
     grid-area: bas5;
     border: 1px solid black;
+}
+
+.bas51 {
+    grid-area: b51;
+    font-size: 150%;
+    font-weight: bold;
+    background: gainsboro;
+    align-self: start;
+}
+
+.bas52 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-areas: "b521"
+    "b522"
+    "b523";
+    grid-area: b52;
+    font-size: 150%;
+    font-weight: bold;
+    border: 1px solid black;
+    grid-row-gap: 5%;
+}
+
+.b521 {
+    grid-area: b521;
+    background: gainsboro;;
+}
+
+.b522 {
+    grid-area: b522;
+    background: gainsboro;
+}
+
+.b523 {
+    grid-area: b523;
+    background: gainsboro;
+}
+
+.bas53 {
+    grid-area: b53;
+    font-size: 150%;
+    font-weight: bold;
+    background: gainsboro;
+    align-self: end;
 }
 
 .Footer {

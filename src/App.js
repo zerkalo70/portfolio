@@ -80,7 +80,17 @@ const App=()=>{
                         </div>
                     </div>
                     <div className="block-5">Блок 5
-                        <div className="basis5">база-5</div>
+                        <div className="basis5">
+                            <div className="bas51">
+                                <span>Контакты</span>
+                            </div>
+                            <div className="bas52">
+                                <div className="b521"></div>
+                                <div className="b522"></div>
+                                <div className="b523"></div>
+                            </div>
+                            <div className="bas53">Отправить</div>
+                        </div>
                     </div>
                 </div>
                 <footer className="Footer">Footer
