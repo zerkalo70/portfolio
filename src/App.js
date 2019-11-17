@@ -60,9 +60,7 @@ const App=()=>{
                                 </div>
                                 <div className="basis32b">
                                     <div className="bb321">
-                                        <div className="kn1">
-                                        <button>Смотреть</button>
-                                        </div>
+                                        <span>Смотреть</span>
                                     </div>
                                     <div className="bb322"></div>
                                 </div>
@@ -94,7 +92,19 @@ const App=()=>{
                     </div>
                 </div>
                 <footer className="Footer">Footer
-                    <div className="basisF">Footer</div>
+                    <div className="basisF">
+                            <div className="bF1">
+                                <span>Сергей Петров</span>
+                            </div>
+                            <div className="bF2">
+                                <div className="bF21"></div>
+                                <div className="bF22"></div>
+                                <div className="bF23"></div>
+                            </div>
+                            <div className="bF3">
+                                <span>© 2019 Все права защищены</span>
+                            </div>
+                    </div>
                 </footer>
             </div>
         );

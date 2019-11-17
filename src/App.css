@@ -307,9 +307,8 @@ a:hover {
     background-size: cover;
 }
 
-.kn1 {
-    height: 100%;
-}
+
+
 
 .bb322 {
     grid-area: bb322;
@@ -422,16 +421,62 @@ a:hover {
 .Footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 5% 90% 5%;
+    grid-template-rows: 25% 70% 5%;
     grid-template-areas: ". . . . . . . . . . . ."
     ". basF basF basF basF basF basF basF basF basF basF ."
     ". . . . . . . . . . . .";
     grid-area: F;
-    background: yellow;
-    color: green;
+    background: palegreen;
+    color: black;
 }
 
 .basisF {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . bF1 bF1 . . . . ."
+    ". . . bF2 bF2 bF2 bF2 bF2 bF2 . . ."
+    ". . . . bF3 bF3 bF3 bF3 . . . .";
     grid-area: basF;
     border: 1px solid black;
+    color: black;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.bF1 {
+    grid-area: bF1;
+    background-color: gainsboro;
+    align-self: start;
+}
+
+.bF2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: ". bF21 . bF22 . bF23 .";
+    grid-area: bF2;
+    background-color: gainsboro;
+    border: 1px solid black;
+}
+
+.bF21{
+    grid-area: bF21;
+    background-color: palegreen;
+}
+
+.bF22{
+    grid-area: bF22;
+    background-color: palegreen;
+}
+
+.bF23{
+    grid-area: bF23;
+    background-color: palegreen;
+}
+
+.bF3 {
+    grid-area: bF3;
+    background-color: gainsboro;
+    align-self: end;
 }
