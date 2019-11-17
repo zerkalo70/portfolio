@@ -20,7 +20,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 5% 90% 5%;
     grid-template-areas: ". . . . . . . . . . . ."
-    ". bm bm bm bm bm bm bm bm bm bm ."
+    ". . . . . . . bm bm bm bm ."
     ". . . . . . . . . . . .";
     grid-area: H;
     background: lightskyblue;
@@ -28,12 +28,13 @@
 
 .block-menu {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
-    ". . . . . . . . m1 m2 m3 m4";
+    "m1 m2 m3 m4";
     grid-area: bm;
     border: 1px solid red;
+    align-self: center;
 }
 
 /*.menu {*/
