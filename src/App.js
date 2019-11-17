@@ -60,9 +60,12 @@ const App=()=>{
                                 </div>
                                 <div className="basis32b">
                                     <div className="bb321">
-                                        <span>Смотреть</span>
+                                        <button className="but321">Смотреть</button>
                                     </div>
-                                    <div className="bb322"></div>
+                                    <div className="bb322">
+                                        <div className="bt322a"><span>Название проекта</span></div>
+                                        <div className="bt322b"><span>Краткое описание</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

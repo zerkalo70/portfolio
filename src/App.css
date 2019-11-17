@@ -302,17 +302,50 @@ a:hover {
 }
 
 .bb321 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: ". but321 ."
+    ". . .";
     grid-area: bb321;
     background: url("image3.jpg");
     background-size: cover;
 }
 
+.but321 {
+    grid-area: but321;
+    align-self: end;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: darkgrey;
+    border: 1px solid blue;
 
-
+}
 
 .bb322 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 5% 35% 50% 10%;
+    grid-template-areas: ". . . . . . . . . . . ."
+    ". bt322a bt322a bt322a bt322a bt322a . . . . . ."
+    ". bt322b bt322b bt322b bt322b bt322b bt322b bt322b bt322b bt322b bt322b ."
+    ". . . . . . . . . . . .";
     grid-area: bb322;
     background-color: gainsboro;
+    grid-row-gap: 2px;
+    text-align: left;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.bt322a {
+    grid-area: bt322a;
+    background-color: darkgrey;
+}
+
+.bt322b {
+    grid-area: bt322b;
+    background-color: darkgrey;
 }
 
 .block-4 {
