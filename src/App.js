@@ -55,8 +55,12 @@ const App=()=>{
                             </div>
                             <div className="basis32">
                                 <div className="basis32a">
-                                    <div className="ba321"></div>
-                                    <div className="ba322"></div>
+                                    <div className="ba321">
+
+                                    </div>
+                                    <div className="ba322">
+
+                                    </div>
                                 </div>
                                 <div className="basis32b">
                                     <div className="bb321">
