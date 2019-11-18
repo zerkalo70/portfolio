@@ -17,7 +17,7 @@
 
 .Header {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 5% 90% 5%;
     /*grid-auto-rows: auto;*/
     grid-template-areas:
@@ -30,7 +30,7 @@
 
 .block-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 25%);
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "m1 m2 m3 m4";
     grid-area: bm;
@@ -79,9 +79,11 @@ a:hover {
 
 .Content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 8fr 9fr 12fr 2fr 10fr;
-    grid-template-areas: "b1"
+    /*grid-auto-rows: auto;*/
+    grid-template-areas:
+    "b1"
     "b2"
     "b3"
     "b4"
@@ -93,8 +95,10 @@ a:hover {
 
 .block-1 {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 3fr 1fr;
+    /*grid-template-columns: repeat(12, 1fr);*/
+    grid-template-columns: repeat(auto-fill, 1fr);;
+    /*grid-template-rows: 1fr 3fr 1fr;*/
+    grid-auto-rows: auto;
     grid-template-areas: ". . . . . . . . . . . ."
     ". bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 bas1 ."
     ". . . . . . . . . . . .";
@@ -104,8 +108,10 @@ a:hover {
 
 .basis1 {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /*grid-template-columns: repeat(12, 1fr);*/
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 1fr;
+    /*grid-auto-rows: auto;*/
     grid-template-areas: ". b11 b11 b11 b11 . . b12 b12 b12 b12 .";
     grid-area: bas1;
     border: 1px solid black;
