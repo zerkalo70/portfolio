@@ -17,24 +17,24 @@
 
 .Header {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 5% 90% 5%;
     /*grid-auto-rows: auto;*/
-    grid-template-areas: ". . . . . . . . . . . ."
-    ". . . . . . . bm bm bm bm ."
-    ". . . . . . . . . . . .";
+    grid-template-areas:
+            ". . . . . . . . . . . ."
+            ". . . . . . . bm bm bm bm ."
+            ". . . . . . . . . . . .";
     grid-area: H;
     background: lightskyblue;
 }
 
 .block-menu {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(auto-fit, 25%);
     grid-template-rows: 1fr;
-    grid-template-areas:
-    "m1 m2 m3 m4";
+    grid-template-areas: "m1 m2 m3 m4";
     grid-area: bm;
-    border: 1px solid red;
+    border: 1px solid black;
     align-self: center;
 }
 
@@ -54,7 +54,6 @@
 .m1 {
     grid-area: m1;
     text-align: left;
-    width: 100%;
 }
 
 .m2 {
