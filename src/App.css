@@ -4,9 +4,10 @@
 
 .Parent {
   display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit 1fr);
     grid-auto-rows: auto;
-    grid-template-areas: "H"
+    grid-template-areas:
+    "H"
     "C"
     "F";
     text-align: center;
@@ -80,7 +81,7 @@ a:hover {
 
 .Content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: 8fr 9fr 12fr 2fr 10fr;
     /*grid-auto-rows: auto;*/
     grid-template-areas:
