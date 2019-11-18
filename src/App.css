@@ -4,8 +4,8 @@
 
 .Parent {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: 1fr 41fr 5fr;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
     grid-template-areas: "H"
     "C"
     "F";
@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 5% 90% 5%;
+    /*grid-auto-rows: auto;*/
     grid-template-areas: ". . . . . . . . . . . ."
     ". . . . . . . bm bm bm bm ."
     ". . . . . . . . . . . .";
@@ -53,6 +54,7 @@
 .m1 {
     grid-area: m1;
     text-align: left;
+    width: 100%;
 }
 
 .m2 {
