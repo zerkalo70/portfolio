@@ -3,7 +3,7 @@ import j from './Jobs.module.css';
 
 
 const Jobs = () => {
-    return   <div className={j.jobs}>
+    return <div className={j.jobs}>
         <div className={j.base}>
             <div className={j.myJobs}>
                 <span>Мои работы</span>

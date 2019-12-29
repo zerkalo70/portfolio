@@ -1,12 +1,12 @@
 .long {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 20px auto 20px;
+    grid-template-rows: 50px auto 50px;
     grid-template-areas: "." "b5" ".";
     grid-area: L;
     background-color: lightyellow;
     grid-column: 1/13;
-    height: 140px;
+    height: 250px;
 }
 
 .base {
@@ -17,7 +17,7 @@
     grid-area: b5;
     border: 2px solid black;
     grid-column: 2/12;
-    height: 100px;
+    height: 150px;
 }
 
 .longLook {

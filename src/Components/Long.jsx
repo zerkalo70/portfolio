@@ -3,7 +3,7 @@ import l from './Long.module.css';
 
 
 const Long = () => {
-    return    <div className={l.long}>
+    return <div className={l.long}>
         <div className={l.base}>
             <div className={l.longLook}>
                 <span>Рассматриваю варианты удалённой работы</span>

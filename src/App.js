@@ -9,20 +9,31 @@ import Jobs from "./Components/Jobs";
 import Long from "./Components/Long";
 import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
+import {BrowserRouter, Route} from "react-router-dom";
 
 
 const App = () => {
-    return <div className="Parent">
+    return (
+        <BrowserRouter>
+    <div className="Parent">
             <header className="header">
               <Navigation/>
             </header>
-            <Resume/>
-            <Skills/>
-            <Jobs/>
-            <Long/>
-            <Contacts/>
+        <Route path = '/Resume' component = {Resume}/>
+        <Route path = '/Skills' component = {Skills}/>
+        <Route path = '/Jobs' component = {Jobs}/>
+        <Route path = '/Contacts' component = {Contacts}/>
+        <Route path = '/Long' component = {Long}/>
+        {/*<Route path = '/Footer' component = {Footer}/>*/}
+            {/*<Resume/>*/}
+            {/*<Skills/>*/}
+            {/*<Jobs/>*/}
+            {/*<Long/>*/}
+            {/*<Contacts/>*/}
             <Footer/>
         </div>
+        </BrowserRouter>
+    )
 }
 
 

@@ -34,3 +34,15 @@
     grid-area: n5;
     align-self: center;
 }
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+
+
