@@ -1,0 +1,36 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 1fr;
+    grid-template-areas: "n1 n2 n3 n4 n5";
+    grid-area: n;
+    border: 2px solid black;
+    grid-column: 6/12;
+    height: 50px;
+    text-align: center;
+}
+
+.nav1 {
+    grid-area: n1;
+    align-self: center;
+}
+
+.nav2 {
+    grid-area: n2;
+    align-self: center;
+}
+
+.nav3 {
+    grid-area: n3;
+    align-self: center;
+}
+
+.nav4 {
+    grid-area: n4;
+    align-self: center;
+}
+
+.nav5 {
+    grid-area: n5;
+    align-self: center;
+}

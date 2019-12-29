@@ -1,20 +1,20 @@
 import React from 'react';
-import logo1 from "../logo1.jpg";
+import f from './Footer.module.css';
 
 
 const Footer = () => {
-    return    <footer className="footer">
-        <div className="base7">
-            <div className="fio">
+    return    <footer className={f.footer}>
+        <div className={f.base}>
+            <div className={f.fio}>
                 <span>Сергей Петров</span>
             </div>
-            <div className="soc">
-                <div className="soc1"></div>
-                <div className="soc2"></div>
-                <div className="soc3"></div>
-                <div className="soc4"></div>
+            <div className={f.SocialNetworks}>
+                <div className={f.sn1}></div>
+                <div className={f.sn2}></div>
+                <div className={f.sn3}></div>
+                <div className={f.sn4}></div>
             </div>
-            <div className="cop">
+            <div className={f.copyright}>
                 <span>© 2019 Все права защищены</span>
             </div>
         </div>

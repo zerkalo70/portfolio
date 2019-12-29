@@ -1,19 +1,19 @@
 import React from 'react';
-import logo1 from "../logo1.jpg";
+import c from './Contacts.module.css';
 
 
 const Contacts = () => {
-    return    <div className="contacts">
-        <div className="base6">
-            <div className="cont">
+    return    <div className={c.contacts}>
+        <div className={c.base}>
+            <div className={c.cont}>
                 <span>Контакты</span>
             </div>
-            <div className="area">
+            <div className={c.area}>
                 <input placeholder="input"/>
                 <input placeholder="input"/>
                 <textarea placeholder="textarea"></textarea>
             </div>
-            <button className="send">Отправить</button>
+            <button className={c.send}>Отправить</button>
         </div>
     </div>
 }

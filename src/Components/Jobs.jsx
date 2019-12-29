@@ -1,25 +1,25 @@
 import React from 'react';
-import logo1 from "../logo1.jpg";
+import j from './Jobs.module.css';
 
 
 const Jobs = () => {
-    return   <div className="jobs">
-        <div className="base3">
-            <div className="my_jobs">
+    return   <div className={j.jobs}>
+        <div className={j.base}>
+            <div className={j.myJobs}>
                 <span>Мои работы</span>
             </div>
-            <div className="example_jobs">
-                <div className="ej1">
-                    <div className="ej11"></div>
-                    <div className="ej12"></div>
+            <div className={j.exampleJobs}>
+                <div className={j.ej1}>
+                    <div className={j.ej11}></div>
+                    <div className={j.ej12}></div>
                 </div>
-                <div className="ej2">
-                    <div className="ej21">
-                        <button className="look">Смотреть</button>
+                <div className={j.ej2}>
+                    <div className={j.ej21}>
+                        <button className={j.look}>Смотреть</button>
                     </div>
-                    <div className="ej22">
-                        <span className="jp1">Название проекта</span>
-                        <div className="jp2">
+                    <div className={j.ej22}>
+                        <span className={j.jp1}>Название проекта</span>
+                        <div className={j.jp2}>
                             <span>Краткое описание</span>
                         </div>
                     </div>

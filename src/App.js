@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import logo1 from './logo1.jpg';
-import image3 from './image3.jpg';
+import image3 from './Components/image3.jpg';
 import Navigation from "./Components/Navigation";
 import Resume from "./Components/Resume";
 import Skills from "./Components/Skills";

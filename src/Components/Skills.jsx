@@ -1,25 +1,25 @@
 import React from 'react';
-import logo1 from "../logo1.jpg";
+import s from './Skills.module.css'
 
 
 const Skills = () => {
-    return   <div className="skills">
-        <div className="base2">
-            <div className="myskills">
+    return   <div className={s.skills}>
+        <div className={s.base}>
+            <div className={s.myskills}>
                 <span>Мои скиллы</span>
             </div>
-            <div className="skillsshow">
-                <div className="ss1"></div>
-                <div className="ss2">
-                    <div className="ss21"></div>
-                    <div className="ss22"></div>
+            <div className={s.skillsshow}>
+                <div className={s.ss1}></div>
+                <div className={s.ss2}>
+                    <div className={s.ss21}></div>
+                    <div className={s.ss22}></div>
                 </div>
-                <div className="ss3">
-                    <div className="ss31">
-                        <div className="ss311"></div>
-                        <button className="ss312">React</button>
+                <div className={s.ss3}>
+                    <div className={s.ss31}>
+                        <div className={s.ss311}></div>
+                        <button className={s.ss312}>React</button>
                     </div>
-                    <div className="ss32">
+                    <div className={s.ss32}>
                         <span>Подробное описание навыка</span>
                     </div>
                 </div>

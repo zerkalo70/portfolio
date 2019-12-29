@@ -1,22 +1,23 @@
 import React from 'react';
+import n from './Navigation.module.css';
 
 
 const Navigation = () => {
     return (
-        <nav className="nav">
-            <div className="nav1">
+        <nav className={n.nav}>
+            <div className={n.nav1}>
                 <a>Главная</a>
             </div>
-            <div className="nav2">
+            <div className={n.nav2}>
                 <a>Скилы</a>
             </div>
-            <div className="nav3">
+            <div className={n.nav3}>
                 <a>Работы</a>
             </div>
-            <div className="nav4">
+            <div className={n.nav4}>
                 <a>Работодателям</a>
             </div>
-            <div className="nav5">
+            <div className={n.nav5}>
                 <a>Контакты</a>
             </div>
         </nav>

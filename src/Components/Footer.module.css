@@ -1,0 +1,72 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px auto 20px;
+    grid-template-areas: "." "b7" ".";
+    grid-area: F;
+    background-color: lightyellow;
+    grid-column: 1/13;
+    height: 340px;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "fio" "soc" "cop";
+    grid-area: b7;
+    border: 2px solid black;
+    grid-column: 2/12;
+    height: 255px;
+}
+
+.fio {
+    grid-area: fio;
+    grid-column: 6/8;
+    background-color: lightgray;
+    text-align: center;
+    align-self: start;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.SocialNetworks {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "sn1 . sn2 . sn3 . sn4";
+    grid-area: soc;
+    grid-column: 4/10;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.sn1 {
+    grid-area: sn1;
+    background-color: lightgray;
+}
+
+.sn2 {
+    grid-area: sn2;
+    background-color: lightgray;
+}
+
+.sn3 {
+    grid-area: sn3;
+    background-color: lightgray;
+}
+
+.sn4 {
+    grid-area: sn4;
+    background-color: lightgray;
+}
+
+.copyright {
+    grid-area: cop;
+    grid-column: 5/9;
+    background-color: lightgray;
+    text-align: center;
+    align-self: end;
+    font-size: 15px;
+    font-weight: bold;
+}

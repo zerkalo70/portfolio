@@ -1,0 +1,39 @@
+.long {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px auto 20px;
+    grid-template-areas: "." "b5" ".";
+    grid-area: L;
+    background-color: lightyellow;
+    grid-column: 1/13;
+    height: 140px;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "ll" "th";
+    grid-area: b5;
+    border: 2px solid black;
+    grid-column: 2/12;
+    height: 100px;
+}
+
+.longLook {
+    grid-area: ll;
+    grid-column: 3/11;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: start;
+}
+
+.toHire {
+    grid-area: th;
+    grid-column: 6/8;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightgray;
+}
