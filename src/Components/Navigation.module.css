@@ -49,5 +49,20 @@ a:hover {
     color: magenta;
 }
 
+@media screen and (max-device-width: 320px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "n1" "n2" "n3" "n4" "n5";
+        grid-area: n;
+        border: 2px solid black;
+        grid-column: 1/2;
+        height: 150px;
+        text-align: center;
+        align-self: center;
+    }
+}
+
 
 

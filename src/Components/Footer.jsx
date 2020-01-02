@@ -6,7 +6,7 @@ const Footer = () => {
     return    <footer className={f.footer}>
         <div className={f.base}>
             <div className={f.fio}>
-                <span>Сергей Петров</span>
+                <span>Петров С.В.</span>
             </div>
             <div className={f.SocialNetworks}>
                 <div className={f.sn1}></div>
