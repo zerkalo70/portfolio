@@ -10,6 +10,16 @@
     text-align: center;
 }
 
+.nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: yellow;
+}
+
 .nav1 {
     grid-area: n1;
     align-self: center;
@@ -33,11 +43,6 @@
 .nav5 {
     grid-area: n5;
     align-self: center;
-}
-a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 a:hover {
