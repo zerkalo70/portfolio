@@ -21,7 +21,7 @@
     .Parent {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, auto);
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas: "H" "R" "S" "J" "L" "C" "F";
         border: 5px solid red;
     }

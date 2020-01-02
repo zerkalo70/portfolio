@@ -77,8 +77,8 @@
     .base {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 5px 1fr 1fr;
-        grid-template-areas: "." "card" "res";
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "card" "res";
         grid-area: b1;
         border: 2px solid black;
         grid-column: 1/2;
