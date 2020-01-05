@@ -22,7 +22,7 @@
 
 .myskills {
     grid-area: ms;
-    grid-column: 6/8;
+    grid-column: 5/9;
     background-color: lightgray;
     align-self: start;
     height: 25px;
@@ -115,10 +115,10 @@
     font-size: 20px;
 }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 850px) {
     .skills {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 10px 1fr 10px;
         grid-template-rows: 20px auto 20px;
         grid-template-areas: "." "b2" ".";
         grid-area: S;
@@ -134,13 +134,119 @@
         grid-template-areas: ".""ms" "ss" ".";
         grid-area: b2;
         border: 2px solid black;
-        grid-column: 1/2;
+        grid-column: 2/3;
         height: 1200px;
     }
 
     .myskills {
         grid-area: ms;
+        grid-column: 5/9;
+        background-color: lightgray;
+        align-self: start;
+        height: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    .skillsshow {
+        display: grid;
+        grid-template-columns: 5px auto 5px;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: "ss1" "ss2" "ss3";
+        grid-area: ss;
         grid-column: 2/12;
+        border: 2px solid black;
+        height: 1110px;
+    }
+
+    .ss1 {
+        grid-area: ss1;
+        background-color: white;
+        height: 300px;
+        border: 2px solid red;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 5px;
+
+    }
+
+    .ss2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "ss21" "ss22";
+        grid-area: ss2;
+        height: 300px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .ss21 {
+        grid-area: ss21;
+        background-color: white;
+        border: 2px solid red;
+    }
+
+    .ss22 {
+        grid-area: ss22;
+        background-color: lightgray;
+        border: 2px solid blue;
+    }
+
+    .ss3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60% 40%;
+        grid-template-areas: "ss31" "ss32";
+        grid-area: ss3;
+        height: 300px;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        border: 2px solid black;
+    }
+}
+@media screen and (max-device-width: 450px) {
+    .myskills {
+        grid-area: ms;
+        grid-column: 4/10;
+        background-color: lightgray;
+        align-self: start;
+        height: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 10px 1fr 10px;
+        grid-template-rows: 20px auto 20px;
+        grid-template-areas: "." "b2" ".";
+        grid-area: S;
+        background-color: palegreen;
+        grid-column: 1/13;
+        height: 1240px;
+    }
+
+    .base {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 5px 50px 1150px 5px;
+        grid-template-areas: ".""ms" "ss" ".";
+        grid-area: b2;
+        border: 2px solid black;
+        grid-column: 2/3;
+        height: 1200px;
+    }
+
+    .myskills {
+        grid-area: ms;
+        grid-column: 3/11;
         background-color: lightgray;
         align-self: start;
         height: 25px;
