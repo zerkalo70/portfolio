@@ -1,64 +1,65 @@
-.Parent {
+.GrossParent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas: "H" "R" "S" "J" "L" "C" "F";
-    border: 5px solid red;
+    grid-template-rows: repeat(7, 200px);
+    grid-template-areas: "N" "R" "W" "S" "F" "C" "A";
 }
 
-.header {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 20px auto 20px;
-    grid-template-areas: "." "n" ".";
-    grid-area: H;
-    background-color: lightskyblue;
-    height: 90px;
+.Navigation {
+    grid-area: N;
+    background-color: fuchsia;
+    color: yellow;
+    text-align: center;
     grid-column: 1/13;
 }
 
-@media screen and (max-device-width: 850px) {
-    .Parent {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-areas: "H" "R" "S" "J" "L" "C" "F";
-        border: 5px solid red;
-    }
-
-    .header {
-        display: grid;
-        grid-template-columns: 10px 1fr 10px;
-        grid-template-rows: repeat(5,auto);
-        grid-template-areas: "." "n" ".";
-        grid-area: H;
-        background-color: lightskyblue;
-        height: 190px;
-        grid-column: 1/2;
-    }
+.Resume {
+    grid-area: R;
+    background-color: yellow;
+    color: green;
+    text-align: center;
+    grid-column: 1/13;
 }
 
-@media screen and (max-device-width: 500px) {
-    .Parent {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-areas: "H" "R" "S" "J" "L" "C" "F";
-        border: 5px solid red;
-    }
-
-    .header {
-        display: grid;
-        grid-template-columns: 10px 1fr 10px;
-        grid-template-rows: repeat(5,auto);
-        grid-template-areas: "." "n" ".";
-        grid-area: H;
-        background-color: lightskyblue;
-        height: 190px;
-        grid-column: 1/2;
-    }
+.MyWorks {
+    grid-area: W;
+    background-color: blue;
+    color: cyan;
+    text-align: center;
+    grid-column: 1/13;
 }
 
+.MyServices {
+    grid-area: S;
+    background-color: red;
+    color: yellow;
+    text-align: center;
+    grid-column: 1/13;
+}
+
+.Freelanc {
+    grid-area: F;
+    background-color: lightgreen;
+    color: blue;
+    text-align: center;
+    grid-column: 1/13;
+}
+
+.Contacts {
+    grid-area: C;
+    background-color: lavender;
+    color: red;
+    text-align: center;
+    grid-column: 1/13;
+}
+
+.Footer {
+    grid-area: A;
+    background-color: gold;
+    color: fuchsia;
+    text-align: center;
+    grid-column: 1/13;
+}
 
 
 
