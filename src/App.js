@@ -6,7 +6,19 @@ import {BrowserRouter, Route} from "react-router-dom";
 const App = () => {
     return (
         <div className="GrossParent">
-            <div className="Navigation">NavBar</div>
+            <div className="Navigation">NavBar
+                <input type="checkbox" id="hmt" className="hidden-menu-ticker"></input>
+                    <label className="btn-menu" for="hmt">
+                        <span className="first"></span>
+                        <span className="second"></span>
+                        <span className="third"></span>
+                    </label>
+                    <ul className="hidden-menu">
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                    </ul>
+            </div>
             <div className="Resume">Resume</div>
             <div className="MyWorks">MyWorks</div>
             <div className="MyServices">MyServices</div>
