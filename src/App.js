@@ -21,7 +21,14 @@ const App = () => {
                         <li><a href="">Contacts</a></li>
                     </ul>
             </div>
-            <div className="Resume">Resume</div>
+            <div className="Resume">
+                <div className="resumeOne">
+                    <span>ФИО и представление</span>
+                </div>
+                <div className="resumeTwo">
+                    <span>FOTO</span>
+                </div>
+            </div>
             <div className="MyWorks">MyWorks</div>
             <div className="MyServices">MyServices</div>
             <div className="Freelanc">Freelanc</div>

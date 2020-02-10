@@ -1,7 +1,7 @@
 .GrossParent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 50px 600px 200px 200px 200px 200px 200px;
     grid-template-areas: "N" "R" "W" "S" "F" "C" "A";
 }
 
@@ -92,11 +92,27 @@
 }
 
 .Resume {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "rO rT";
     grid-area: R;
     background-color: yellow;
     color: green;
     text-align: center;
     grid-column: 1/13;
+}
+
+.resumeOne {
+    grid-area: rO;
+    grid-column: 1/7;
+    background-color: lightgreen;
+}
+
+.resumeTwo {
+    grid-area: rT;
+    grid-column: 7/13;
+    background-color: cyan;
 }
 
 .MyWorks {
