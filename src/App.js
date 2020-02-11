@@ -26,7 +26,8 @@ const App = () => {
                     <span>ФИО и представление</span>
                 </div>
                 <div className="resumeTwo">
-                    <span>FOTO</span>
+                    <div className="rT2"></div>
+                    <div className="rT1"></div>
                 </div>
             </div>
             <div className="MyWorks">MyWorks</div>

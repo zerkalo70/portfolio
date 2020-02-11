@@ -113,6 +113,34 @@
     grid-area: rT;
     grid-column: 7/13;
     background-color: cyan;
+    position: relative;
+}
+
+.rT1 {
+    width: 50%;
+    height: 70%;
+    position:absolute;
+    right:15px;
+    top: 15px;
+    background-color: yellow;
+    transition: 10s;
+}
+
+.Resume:hover .rT1 {
+    transform: translate(-300px,150px);
+    transition: all 10s ease-in-out;
+    /*-webkit-transform: translate(350px,-350px);*/
+    /*-o-transform: translate(350px,-350px);*/
+    /*-moz-transform: translate(350px,-350px);*/
+}
+
+.rT2 {
+    width: 50%;
+    height: 70%;
+    position:absolute;
+    right:15px;
+    top: 15px;
+    background-color: blue;
 }
 
 .MyWorks {
