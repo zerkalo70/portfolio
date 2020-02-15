@@ -22,15 +22,24 @@ const App = () => {
                     </ul>
             </div>
             <div className="Resume">
-                <div className="resumeOne">
-                    <span>ФИО и представление</span>
-                </div>
-                <div className="resumeTwo">
-                    <div className="rT2"></div>
-                    <div className="rT1"></div>
+                <div className="represent">
+                    <div className="text">
+                    <span className="t1">Привет!</span><br/>
+                    <span className="t2">Меня зовут</span><br/>
+                    <span className="t3">Петров Сергей</span><br/>
+                    <span className="t4">Я - Frontand разработчик.</span>
+                    </div>
+            </div>
+                <div className="show">
+                    <div className="flip-container">
+                        <div className="flipper">
+                            <div className="front"></div>
+                            <div className="back"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="MyWorks">MyWorks</div>
+            <div className="MyWorks"></div>
             <div className="MyServices">MyServices</div>
             <div className="Freelanc">Freelanc</div>
             <div className="Contacts">Contacts</div>
