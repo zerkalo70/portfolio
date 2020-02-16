@@ -1,7 +1,7 @@
 .GrossParent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px 550px 550px 200px 200px 200px 200px;
+    grid-template-rows: 50px 550px 550px 550px 200px 200px 200px;
     grid-template-areas: "N" "R" "W" "S" "F" "C" "A";
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -22,10 +22,10 @@
 
 .Navigation {
     grid-area: N;
-    /*background-color: fuchsia;*/
     color: yellow;
     text-align: center;
     grid-column: 1/13;
+    grid-row: 1/2;
     border-bottom: 2px solid yellow;
 }
 
@@ -113,10 +113,10 @@
     grid-template-rows: 1fr;
     grid-template-areas: "represent represent show";
     grid-area: R;
-    /*background-color: yellow;*/
     color: green;
     text-align: center;
     grid-column: 1/13;
+    grid-row: 2/3;
     border-bottom: 2px solid yellow;
 }
 
@@ -133,23 +133,17 @@
 .represent {
     grid-area: represent;
     grid-column: 1/3;
-    /*background-color: blue;*/
     position: relative;
 }
 .text {
     color: orange;
     font: normal 40px Varela Round, sans-serif;
     height: 50%;
-    /*left: 0;*/
     letter-spacing: 5px;
-    /*margin: -80px 0 0 0;*/
     position: absolute;
     text-align: center;
-    /*text-transform: uppercase;*/
-    /*top: 25%;*/
     width: 70%;
     animation: move linear 2000ms infinite;
-    /*background-color: green;*/
     transition: all 2s ease-in-out;
 }
 
@@ -222,21 +216,8 @@
 .show {
     grid-area: show;
     grid-column: -1/-2;
-    /*background-color: yellow;*/
 }
 
-/*.flip-container {*/
-/*    !*-webkit-perspective: 1000;*!*/
-/*    !*-moz-perspective: 1000;*!*/
-/*    !*-o-perspective: 1000;*!*/
-/*    !*perspective: 1000;*!*/
-/*    background-color: red;*/
-/*    border: 2px solid black;*/
-/*    height: 550px;*/
-/*    width: 500px;*/
-/*}*/
-
-/*.flip-container:hover .flipper,*/
 .Resume:hover .flipper {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -273,8 +254,6 @@
     backface-visibility: hidden;
 
     position: absolute;
-    /*top: 0;*/
-    /*left: 0;*/
 }
 
 .front {
@@ -293,45 +272,143 @@
 
 .MyWorks {
     grid-area: W;
-    color: cyan;
     text-align: center;
     grid-column: 1/13;
+    grid-row: 3/4;
     border-bottom: 2px solid yellow;
 }
 
+.titleWorks {
+    height: 60px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    color: yellow;
+    font-size: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrap {
+    height: 350px;
+    margin: 50px auto 0;
+    position: relative;
+    width: 500px;
+}
+.wrap > input {
+    display: none;
+}
+.slider {
+    background-color: #333;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+}
+.slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    transform: rotate(55deg);
+    -webkit-filter: hue-rotate(90deg);
+    transition: 1s;
+}
+.img1 { background-image: url(lion.jpg); }
+.img2 { background-image: url(tiger.jpg); }
+.img3 { background-image: url(pantera.jpg); }
+
+.wrap .control {
+    position: absolute;
+    margin-left: -50px;
+    left: 50%;
+}
+.wrap label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 10px;
+    position: relative;
+    width: 20px;
+    border-radius: 20%;
+}
+.wrap label:after {
+    border: 2px solid green;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 20px;
+    border-radius: 20%;
+}
+
+#point1:checked ~ .control label:nth-of-type(1),
+#point2:checked ~ .control label:nth-of-type(2),
+#point3:checked ~ .control label:nth-of-type(3) {
+    background: yellow;
+}
+#point1:checked ~ .slider > .img1,
+#point2:checked ~ .slider > .img2,
+#point3:checked ~ .slider > .img3 {
+    opacity: 1;
+    z-index: 1;
+    transform: none;
+    -webkit-filter: none;
+}
 .MyServices {
     grid-area: S;
-    /*background-color: red;*/
-    color: yellow;
     text-align: center;
     grid-column: 1/13;
+    grid-row: 4/5;
     border-bottom: 2px solid yellow;
+}
+
+.titleServices {
+    height: 60px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    color: yellow;
+    font-size: 40px;
 }
 
 .Freelanc {
     grid-area: F;
-    /*background-color: lightgreen;*/
     color: blue;
     text-align: center;
     grid-column: 1/13;
+    grid-row: 5/6;
     border-bottom: 2px solid yellow;
 }
 
 .Contacts {
     grid-area: C;
-    /*background-color: lavender;*/
     color: red;
     text-align: center;
     grid-column: 1/13;
+    grid-row: 6/7;
     border-bottom: 2px solid yellow;
 }
 
 .Footer {
     grid-area: A;
-    /*background-color: gold;*/
     color: fuchsia;
     text-align: center;
     grid-column: 1/13;
+    grid-row: 7/8;
 }
 
 
