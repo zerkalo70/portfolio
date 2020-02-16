@@ -74,7 +74,14 @@ const App = () => {
                 </div>
                 </div>
             </div>
-            <div className="Freelanc">Freelanc</div>
+            <div className="Freelanc">
+                <div className="blockFree">
+                    <h1 className="marquee"><span>Рассматриваю варианты удалённой работы</span></h1>
+                </div>
+                {/*<div className="but">*/}
+                    <button>Нанять меня</button>
+                {/*</div>*/}
+            </div>
             <div className="Contacts">Contacts</div>
             <div className="Footer">Footer</div>
         </div>
