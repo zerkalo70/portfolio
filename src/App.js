@@ -59,6 +59,20 @@ const App = () => {
             </div>
             <div className="MyServices">
                 <div className="titleServices">Мои навыки</div>
+                <div className="skills">
+                <p>HTML</p>
+                <div className="progressbar">
+                    <span></span>
+                </div>
+                <p>CSS</p>
+                <div className="progressbar orange">
+                    <span></span>
+                </div>
+                <p>JavaScript</p>
+                <div className="progressbar red">
+                    <span></span>
+                </div>
+                </div>
             </div>
             <div className="Freelanc">Freelanc</div>
             <div className="Contacts">Contacts</div>
