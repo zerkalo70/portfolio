@@ -6,20 +6,84 @@ import {BrowserRouter, Route} from "react-router-dom";
 const App = () => {
     return (
         <div className="GrossParent">
-            <div className="Navigation">NavBar
+            <div className="Navigation">
                 <input type="checkbox" id="hmt" className="hidden-menu-ticker"></input>
                     <label className="btn-menu" for="hmt">
                         <span className="first"></span>
                         <span className="second"></span>
                         <span className="third"></span>
+                        <p>MENU</p>
                     </label>
                     <ul className="hidden-menu">
-                        <li><a href="">Resume</a></li>
-                        <li><a href="">Works</a></li>
-                        <li><a href="">Servises</a></li>
-                        <li><a href="">Freelanc</a></li>
-                        <li><a href="">Contacts</a></li>
+                        <li>
+                            <a href="#" className="three-d">Главная
+                                <span aria-hidden="true" className="three-d-box">
+        <span className="front">Главная</span>
+        <span className="back">Главная</span>
+      </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="three-d">Мои работы
+                                <span aria-hidden="true" className="three-d-box">
+          <span className="front">Мои работы</span>
+          <span className="back">Мои работы</span>
+	</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="three-d">Мои навыки
+                                <span aria-hidden="true" className="three-d-box">
+	  <span className="front">Мои навыки</span>
+	  <span className="back">Мои навыки</span>
+	</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="three-d">Контакты
+                                <span aria-hidden="true" className="three-d-box">
+	  <span className="front">Контакты</span>
+	  <span className="back">Контакты</span>
+	</span>
+                            </a>
+                        </li>
                     </ul>
+    {/*                    <ul className="block-menu">*/}
+    {/*                        <li>*/}
+    {/*                            <a href="#" className="three-d">Главная*/}
+    {/*                                <span aria-hidden="true" className="three-d-box">*/}
+    {/*    <span className="front">Главная</span>*/}
+    {/*    <span className="back">Главная</span>*/}
+    {/*  </span>*/}
+    {/*                            </a>*/}
+    {/*                        </li>*/}
+    {/*                        <li>*/}
+    {/*                            <a href="#" className="three-d">Пункт 1*/}
+    {/*                                <span aria-hidden="true" className="three-d-box">*/}
+    {/*      <span className="front">Пункт 1</span>*/}
+    {/*      <span className="back">Пункт 1</span>*/}
+	{/*</span>*/}
+    {/*                            </a>*/}
+    {/*                        </li>*/}
+    {/*                        <li>*/}
+    {/*                            <a href="#" className="three-d">Пункт 2*/}
+    {/*                                <span aria-hidden="true" className="three-d-box">*/}
+	{/*  <span className="front">Пункт 2</span>*/}
+	{/*  <span className="back">Пункт 2</span>*/}
+	{/*</span>*/}
+    {/*                            </a>*/}
+    {/*                        </li>*/}
+    {/*                        <li>*/}
+    {/*                            <a href="#" className="three-d">Пункт 3*/}
+    {/*                                <span aria-hidden="true" className="three-d-box">*/}
+	{/*  <span className="front">Пункт 3</span>*/}
+	{/*  <span className="back">Пункт 3</span>*/}
+	{/*</span>*/}
+    {/*                            </a>*/}
+    {/*                        </li>*/}
+    {/*                    </ul>*/}
+
+
             </div>
             <div className="Resume">
                 <div className="represent">
@@ -33,8 +97,8 @@ const App = () => {
                 <div className="show">
                     <div className="flip-container">
                         <div className="flipper">
-                            <div className="front"></div>
-                            <div className="back"></div>
+                            <div className="frontA"></div>
+                            <div className="backB"></div>
                         </div>
                     </div>
                 </div>
@@ -78,12 +142,50 @@ const App = () => {
                 <div className="blockFree">
                     <h1 className="marquee"><span>Рассматриваю варианты удалённой работы</span></h1>
                 </div>
-                {/*<div className="but">*/}
                     <button>Нанять меня</button>
-                {/*</div>*/}
             </div>
-            <div className="Contacts">Contacts</div>
-            <div className="Footer">Footer</div>
+            <div className="Contacts">
+                <div className="titleContacts">Контакты</div>
+                {/*forma*/}
+                <div className="fullContact">
+                    <form className="contactform" name="contact" method="post" action="#">
+                        <p className="note"><span className="req">*</span> Поля со звездочкой обязательны для заполнения
+                        </p>
+                        <div className="row">
+                            <label htmlFor="name">Ваше Имя <span className="req">*</span></label>
+                            <input type="text" name="name" id="name" className="txt" tabIndex="1"
+                                   placeholder="Стив Джобс" required></input>
+                        </div>
+
+                        <div className="row">
+                            <label htmlFor="email">E-mail Адрес <span className="req">*</span></label>
+                            <input type="email" name="email" id="email" className="txt" tabIndex="2"
+                                   placeholder=" address@mail.ru" required></input>
+                        </div>
+
+                        <div className="row">
+                            <label htmlFor="subject">Тема <span className="req">*</span></label>
+                            <input type="text" name="subject" id="subject" className="txt" tabIndex="3"
+                                   placeholder="Тема письма" required></input>
+                        </div>
+
+                        <div className="row">
+                            <label htmlFor="message">Сообщение <span className="req">*</span></label>
+                            <textarea name="message" id="message" className="txtarea" tabIndex="4" required></textarea>
+                        </div>
+
+                        <div className="center">
+                            <input type="submit" className="submitButton" name="submitbtn" tabIndex="5"
+                                   value="Отправить Сообщение"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div className="Footer">
+                <div className="cop">
+                    <p>© Петров С.В. 2020. Все права защищены</p>
+                </div>
+            </div>
         </div>
     )
 }
