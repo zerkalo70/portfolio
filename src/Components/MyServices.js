@@ -1,24 +1,24 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import {BrowserRouter, Route} from "react-router-dom";
-
+import s from './MyServices.module.css'
 
 class MyServices extends React.Component {
     render = () => {
         return (
-            <div className="MyServices">
-                <div className="titleServices">Мои навыки</div>
-                <div className="skills">
+            <div className={s.MyServices}>
+                <div className={s.titleServices}>Мои навыки</div>
+                <div className={s.skills}>
                     <p>HTML</p>
-                    <div className="progressbar">
+                    <div className={s.progressbar}>
                         <span></span>
                     </div>
                     <p>CSS</p>
-                    <div className="progressbar orange">
+                    <div className={`${s.progressbar} ${s.orange}`}>
                         <span></span>
                     </div>
                     <p>JavaScript</p>
-                    <div className="progressbar red">
+                    <div className={`${s.progressbar} ${s.red}`}>
                         <span></span>
                     </div>
                 </div>

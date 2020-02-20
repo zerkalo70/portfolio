@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Route} from "react-router-dom";
-import Navigation from "./Navigation";
-import Resume from "./Resume";
-import MyWorks from "./MyWorks";
-import MyServices from "./MyServices";
-import Freelanc from "./Freelanc";
-import Contacts from "./Contacts";
-import Footer from "./Footer";
+import Navigation from "./Components/Navigation";
+import Resume from "./Components/Resume";
+import MyWorks from "./Components/MyWorks";
+import MyServices from "./Components/MyServices";
+import Freelanc from "./Components/Freelanc";
+import Contacts from "./Components/Contacts";
+import Footer from "./Components/Footer";
 
 
 class App extends React.Component {
