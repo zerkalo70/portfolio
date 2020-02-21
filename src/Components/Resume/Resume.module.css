@@ -140,7 +140,7 @@
 }
 
 .frontA {
-    background: url("./react-logo.png") 0 0 no-repeat;
+    background: url("react-logo.png") 0 0 no-repeat;
     z-index: 2;
 }
 
@@ -150,5 +150,5 @@
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
-    background: url("./logo49.jpg") -50px 10px no-repeat;
+    background: url("logo49.jpg") -50px 10px no-repeat;
 }

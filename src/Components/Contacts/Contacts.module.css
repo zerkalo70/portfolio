@@ -81,7 +81,7 @@ form .txt {
     font-weight: normal;
     color: #898989;
     background-color: #f0f0f0;
-    background-image: url('./checkmark.png');
+    background-image: url('checkmark.png');
     background-position: 110% center;
     background-repeat: no-repeat;
     border: 1px solid #ccc;
@@ -111,7 +111,7 @@ form .txtarea {
     font-weight: normal;
     color: #898989;
     background-color: #f0f0f0;
-    background-image: url('./checkmark.png');
+    background-image: url('checkmark.png');
     background-position: 110% 4%;
     background-repeat: no-repeat;
     border: 1px solid #ccc;
