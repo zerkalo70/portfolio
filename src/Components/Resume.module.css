@@ -26,6 +26,7 @@
     grid-column: 1/3;
     position: relative;
 }
+
 .text {
     color: orange;
     font: normal 40px Varela Round, sans-serif;
@@ -39,71 +40,62 @@
 }
 
 .Resume:hover .text {
-    transform: translate(150px,150px);
+    transform: translate(150px, 150px);
 }
 
 @keyframes move {
     0% {
-        text-shadow:
-                4px -4px 0 hsla(0, 100%, 50%, 1),
-                3px -3px 0 hsla(0, 100%, 50%, 1),
-                2px -2px 0 hsla(0, 100%, 50%, 1),
-                1px -1px 0 hsla(0, 100%, 50%, 1),
-                -4px 4px 0 hsla(180, 100%, 50%, 1),
-                -3px 3px 0 hsla(180, 100%, 50%, 1),
-                -2px 2px 0 hsla(180, 100%, 50%, 1),
-                -1px 1px 0 hsla(180, 100%, 50%, 1)
-    ;
+        text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+        3px -3px 0 hsla(0, 100%, 50%, 1),
+        2px -2px 0 hsla(0, 100%, 50%, 1),
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1),
+        -3px 3px 0 hsla(180, 100%, 50%, 1),
+        -2px 2px 0 hsla(180, 100%, 50%, 1),
+        -1px 1px 0 hsla(180, 100%, 50%, 1);
     }
     25% {
-        text-shadow:
-                -4px -4px 0 hsla(180, 100%, 50%, 1),
-                -3px -3px 0 hsla(180, 100%, 50%, 1),
-                -2px -2px 0 hsla(180, 100%, 50%, 1),
-                -1px -1px 0 hsla(180, 100%, 50%, 1),
-                4px 4px 0 hsla(0, 100%, 50%, 1),
-                3px 3px 0 hsla(0, 100%, 50%, 1),
-                2px 2px 0 hsla(0, 100%, 50%, 1),
-                1px 1px 0 hsla(0, 100%, 50%, 1)
-    ;
+        text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1),
+        -3px -3px 0 hsla(180, 100%, 50%, 1),
+        -2px -2px 0 hsla(180, 100%, 50%, 1),
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 hsla(0, 100%, 50%, 1),
+        3px 3px 0 hsla(0, 100%, 50%, 1),
+        2px 2px 0 hsla(0, 100%, 50%, 1),
+        1px 1px 0 hsla(0, 100%, 50%, 1);
     }
     50% {
-        text-shadow:
-                -4px 4px 0 hsla(0, 100%, 50%, 1),
-                -3px 3px 0 hsla(0, 100%, 50%, 1),
-                -2px 2px 0 hsla(0, 100%, 50%, 1),
-                -1px 1px 0 hsla(0, 100%, 50%, 1),
-                4px -4px 0 hsla(180, 100%, 50%, 1),
-                3px -3px 0 hsla(180, 100%, 50%, 1),
-                2px -2px 0 hsla(180, 100%, 50%, 1),
-                1px -1px 0 hsla(180, 100%, 50%, 1)
-    ;
+        text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1),
+        -3px 3px 0 hsla(0, 100%, 50%, 1),
+        -2px 2px 0 hsla(0, 100%, 50%, 1),
+        -1px 1px 0 hsla(0, 100%, 50%, 1),
+        4px -4px 0 hsla(180, 100%, 50%, 1),
+        3px -3px 0 hsla(180, 100%, 50%, 1),
+        2px -2px 0 hsla(180, 100%, 50%, 1),
+        1px -1px 0 hsla(180, 100%, 50%, 1);
     }
     75% {
-        text-shadow:
-                4px 4px 0 hsla(180, 100%, 50%, 1),
-                3px 3px 0 hsla(180, 100%, 50%, 1),
-                2px 2px 0 hsla(180, 100%, 50%, 1),
-                1px 1px 0 hsla(180, 100%, 50%, 1),
-                -4px -4px 0 hsla(0, 100%, 50%, 1),
-                -3px -3px 0 hsla(0, 100%, 50%, 1),
-                -2px -2px 0 hsla(0, 100%, 50%, 1),
-                -1px -1px 0 hsla(0, 100%, 50%, 1)
-    ;
+        text-shadow: 4px 4px 0 hsla(180, 100%, 50%, 1),
+        3px 3px 0 hsla(180, 100%, 50%, 1),
+        2px 2px 0 hsla(180, 100%, 50%, 1),
+        1px 1px 0 hsla(180, 100%, 50%, 1),
+        -4px -4px 0 hsla(0, 100%, 50%, 1),
+        -3px -3px 0 hsla(0, 100%, 50%, 1),
+        -2px -2px 0 hsla(0, 100%, 50%, 1),
+        -1px -1px 0 hsla(0, 100%, 50%, 1);
     }
     100% {
-        text-shadow:
-                4px -4px 0 hsla(0, 100%, 50%, 1),
-                3px -3px 0 hsla(0, 100%, 50%, 1),
-                2px -2px 0 hsla(0, 100%, 50%, 1),
-                1px -1px 0 hsla(0, 100%, 50%, 1),
-                -4px 4px 0 hsla(180, 100%, 50%, 1),
-                -3px 3px 0 hsla(180, 100%, 50%, 1),
-                -2px 2px 0 hsla(180, 100%, 50%, 1),
-                -1px 1px 0 hsla(180, 100%, 50%, 1)
-    ;
+        text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+        3px -3px 0 hsla(0, 100%, 50%, 1),
+        2px -2px 0 hsla(0, 100%, 50%, 1),
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1),
+        -3px 3px 0 hsla(180, 100%, 50%, 1),
+        -2px 2px 0 hsla(180, 100%, 50%, 1),
+        -1px 1px 0 hsla(180, 100%, 50%, 1);
     }
 }
+
 .show {
     grid-area: show;
     grid-column: -1/-2;
