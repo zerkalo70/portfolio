@@ -1,12 +1,11 @@
 .GrossParent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px 550px 550px 300px 200px 700px 100px;
-    grid-template-areas: "N" "R" "W" "S" "F" "C" "A";
+    grid-template-rows: 80px 1fr 30px;
+    grid-template-areas: "Navigation" "Content" "Footer";
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
-    border: 2px solid yellow;
 }
 
 @keyframes gradient {
@@ -20,6 +19,44 @@
         background-position: 0% 50%;
     }
 }
+
+.Content {
+    grid-area: Content;
+    grid-column: 1/13;
+    grid-row: 2/3;
+    height: 515px;
+    /*background: yellow;*/
+    /*border: 5px solid blue;*/
+    /*width: 1300px;*/
+    /*margin: auto;*/
+    /*margin-left: 20px;*/
+}
+
+/*.A {*/
+/*    height: 500px;*/
+/*    width: 100%;*/
+/*    !*background: red;*!*/
+/*}*/
+
+/*.BorderL {*/
+/*    grid-area: BL;*/
+/*    background: greenyellow;*/
+/*    grid-row: 2/3;*/
+/*    grid-column: 1/2;*/
+/*}*/
+
+/*.BorderR {*/
+/*    grid-area: BR;*/
+/*    background: greenyellow;*/
+/*    grid-row: 2/3;*/
+/*    grid-column: 12/13;*/
+/*}*/
+
+
+
+
+
+
 
 
 

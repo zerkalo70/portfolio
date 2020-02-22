@@ -1,9 +1,6 @@
 .MyServices {
-    grid-area: S;
     text-align: center;
-    grid-column: 1/13;
-    grid-row: 4/5;
-    border-bottom: 2px solid yellow;
+
 }
 
 .titleServices {
@@ -34,7 +31,6 @@
     margin: auto;
     position: relative;
     border: 1px solid green;
-    /*background: #555;*/
     padding: 3px;
     box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
 }
@@ -94,4 +90,70 @@
     100% {
         background-position: 50px 50px;
     }
+}
+
+.Freelanc {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.blockFree {
+    font-size: 30px;
+    color: chartreuse;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+
+.marquee {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 5s infinite linear;
+    -moz-animation: scroll 5s infinite linear;
+    animation: scroll 5s infinite linear;
+}
+
+.Freelanc > button {
+    margin-top: 40px;
+    height: 50px;
+    width: 150px;
+    color: chartreuse;
+    border: 2px solid chartreuse;
+    background: green;
+    font-size: 20px;
 }

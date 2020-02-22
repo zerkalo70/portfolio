@@ -1,31 +1,28 @@
 .Navigation {
-    grid-area: N;
-    text-align: center;
+    grid-area: Navigation;
     grid-column: 1/13;
     grid-row: 1/2;
+    background: greenyellow;
 }
 
-.hiddenMenu {
+/* базовые стили меню */
+.blockMenu {
     display: block;
-    position: fixed;
-    list-style:none;
-    margin: 0;
-    box-sizing: border-box;
-    width: 100%;
-    background: rgba(0, 170, 238, 0.9); /* Цвет фона */
-    color: #fff; /* Цвет текста */
-    padding: 150px; /* Поля вокруг текста */
-    height: 100%;
-    top: 0;
-    right: -100%;
-    transition: right .2s;
-    z-index: 2;
-    transform: translateZ(0);
-    backface-visibility: hidden;
+    width: 40%;
+    padding-left: 10px ;
+    margin: auto;
+    line-height: 70px
 }
 
-.hiddenMenu li a {
-    color: white;
+.blockMenu li {
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: middle;  /* ..по вертикали */
+    line-height: 1.25;
+}
+
+.blockMenu li a {
+    color: #fff;
     display: block;
     text-decoration: none;
     font-family: inherit; /* здесь можно задать свой фонт */
@@ -33,10 +30,10 @@
     text-transform: uppercase;
     overflow: visible;
     line-height: 20px;
-    font-size: 24px;
+    font-size: 18px;
     padding: 15px 10px;
-    margin-top: 10px;
 }
+
 /* анимация */
 .threeD {
     perspective: 200px;
@@ -44,13 +41,12 @@
     position: relative;
     cursor: pointer;
 }
-
-.threeD:hover .threeDbox,
-.threeD:focus .threeDbox {
+.threeD:hover .threeD_box,
+.threeD:focus .threeD_box {
     transform: translateZ(-25px) rotateX(90deg);
 }
 
-.threeDbox {
+.threeD_box {
     transition: all .3s ease-out;
     transform: translatez(-25px);
     transform-style: preserve-3d;
@@ -69,8 +65,7 @@
 
 .back {
     transform: rotatex(-90deg) translatez(25px);
-    /*color: #ffe7c4;*/
-    color: yellow;
+    color: #ffe7c4;
 }
 
 .front, .back {
@@ -82,59 +77,7 @@
     left: 0;
     background: #237570; /* цвет подложки пунктов меню */
     padding: 15px 10px;
+    color: white; /* цвет пунктов меню */
     pointer-events: none;
     box-sizing: border-box;
-}
-
-/*knopka*/
-.hiddenMenuTicker {
-    display: none;
-}
-
-.btnMenu {
-    color: #fff;
-    background: chartreuse;
-    padding: 5px;
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    transition: right .23s;
-    z-index: 3;
-    width: 55px;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-}
-.btnMenu span {
-    display: block;
-    height: 5px;
-    background-color: orange;
-    margin: 5px 0 0;
-    transition: all .1s linear .23s;
-    position: relative;
-}
-.btnMenu span.first {
-    margin-top: 0;
-}
-
-.btnMenu p {
-    color: darkgreen;
-}
-
-.hiddenMenuTicker:checked ~ .btnMenu {
-    right: 95%;
-}
-.hiddenMenuTicker:checked ~ .hiddenMenu {
-    right: 0;
-}
-.hiddenMenuTicker:checked ~ .btnMenu span.first {
-    transform: rotate(45deg);
-    top: 10px;
-}
-.hiddenMenuTicker:checked ~ .btnMenu span.second {
-    opacity: 0;
-}
-.hiddenMenuTicker:checked ~ .btnMenu span.third {
-    transform: rotate(-45deg);
-    top: -10px;
 }

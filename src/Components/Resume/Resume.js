@@ -10,9 +10,9 @@ class Resume extends React.Component {
                 <div className={s.represent}>
                     <div className={s.text}>
                         <span className={s.t1}>Привет!</span><br/>
-                        <span className={s.t2}>Меня зовут</span><br/>
+                        <span>Меня зовут</span><br/>
                         <span className={s.t3}>Петров Сергей</span><br/>
-                        <span className={s.t4}>Я - Frontand разработчик.</span>
+                        <span>Я - frontand - разработчик.</span>
                     </div>
                 </div>
                 <div className={s.show}>

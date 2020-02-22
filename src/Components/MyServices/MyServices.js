@@ -22,6 +22,12 @@ class MyServices extends React.Component {
                         <span></span>
                     </div>
                 </div>
+                <div className={s.Freelanc}>
+                    <div className={s.blockFree}>
+                        <h1 className={s.marquee}><span>Рассматриваю варианты удалённой работы</span></h1>
+                    </div>
+                    <button>Нанять меня</button>
+                </div>
             </div>
         )
     }

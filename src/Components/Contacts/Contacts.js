@@ -11,8 +11,7 @@ class Contacts extends React.Component {
                 {/*forma*/}
                 <div className={s.fullContact}>
                     <form className={s.contactform} name="contact" method="post" action="#">
-                        <p className="note"><span className={s.req}>*</span> Поля со звездочкой обязательны для заполнения
-                        </p>
+
                         <div className={s.row}>
                             <label htmlFor="name">Ваше Имя <span className={s.req}>*</span></label>
                             <input type="text" name="name" id="name" className={s.txt} tabIndex="1"
@@ -35,7 +34,8 @@ class Contacts extends React.Component {
                             <label htmlFor="message">Сообщение <span className={s.req}>*</span></label>
                             <textarea name="message" id="message" className={s.txtarea} tabIndex="4" required></textarea>
                         </div>
-
+                        <p className="note"><span className={s.req}>*</span> Поля со звездочкой обязательны для заполнения
+                        </p>
                         <div className={s.center}>
                             <input type="submit" className={s.submitButton} name="submitbtn" tabIndex="5"
                                    value="Отправить Сообщение"></input>

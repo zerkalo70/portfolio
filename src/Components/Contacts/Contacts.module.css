@@ -1,10 +1,10 @@
 .Contacts {
-    grid-area: C;
-    color: red;
+    /*grid-area: C;*/
+    color: orange;
     text-align: center;
-    grid-column: 1/13;
-    grid-row: 6/7;
-    border-bottom: 2px solid yellow;
+    /*grid-column: 1/13;*/
+    /*grid-row: 6/7;*/
+    /*border-bottom: 2px solid yellow;*/
 
 }
 
@@ -12,7 +12,7 @@
     height: 60px;
     width: 400px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 5px;
     border-radius: 50%;
     border: 2px solid yellow;
     color: yellow;
@@ -20,12 +20,11 @@
 }
 
 .fullContact {
-    /*background: yellow;*/
     display: block;
     width: 760px;
     margin: 0 auto;
-    margin-top: 25px;
-    padding: 35px 15px;
+    margin-top: 5px;
+    padding: 15px 15px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
@@ -38,7 +37,7 @@
 form .row {
     display: block;
     padding: 7px 8px;
-    margin-bottom: 7px;
+    /*margin-bottom: 7px;*/
 }
 
 form label {
@@ -51,7 +50,7 @@ form label {
     /*color: #464646;*/
     vertical-align: top;
 }
-/*form .req { color: #ca5354; }*/
+
 form .req { color: chartreuse; }
 
 form .note {
@@ -65,7 +64,6 @@ form .note {
 
 form input:focus, form textarea:focus { outline: none; }
 
-/* placeholder styles: http://stackoverflow.com/a/2610741/477958 */
 ::-webkit-input-placeholder { color: #aaafbd; font-style: italic; } /* WebKit */
 :-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 4 to 18 */
 ::-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 19+ */
@@ -73,8 +71,8 @@ form input:focus, form textarea:focus { outline: none; }
 
 form .txt {
     display: inline-block;
-    padding: 8px 9px;
-    padding-right: 30px;
+    /*padding: 8px 9px;*/
+    /*padding-right: 30px;*/
     width: 240px;
     font-family: 'Oxygen', sans-serif;
     font-size: 1.35em;
@@ -102,8 +100,8 @@ form .txt {
 
 form .txtarea {
     display: inline-block;
-    padding: 8px 11px;
-    padding-right: 30px;
+    /*padding: 8px 11px;*/
+    /*padding-right: 30px;*/
     width: 320px;
     height: 120px;
     font-family: 'Oxygen', sans-serif;
@@ -167,7 +165,7 @@ form .txt:focus:valid, form .txtarea:focus:valid {
 }
 
 form .center {
-    margin-top: 25px;
+    margin-top: 5px;
     text-align: center;
 }
 

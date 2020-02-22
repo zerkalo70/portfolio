@@ -1,9 +1,7 @@
 .MyWorks {
     grid-area: W;
     text-align: center;
-    grid-column: 1/13;
-    grid-row: 3/4;
-    border-bottom: 2px solid yellow;
+    grid-column: 1/11;
 }
 
 .titleWorks {

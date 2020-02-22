@@ -1,52 +1,46 @@
 import React from 'react';
 import '../../App.css';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, NavLink, Route} from "react-router-dom";
 import s from './Navigation.module.css'
 
 class Navigation extends React.Component {
     render = () => {
         return (
                 <div className={s.Navigation}>
-                    <input type="checkbox" id="hmt" className={s.hiddenMenuTicker}></input>
-                    <label className={s.btnMenu} htmlFor="hmt">
-                        <span className={s.first}></span>
-                        <span className={s.second}></span>
-                        <span className={s.third}></span>
-                        <p>MENU</p>
-                    </label>
-                    <ul className={s.hiddenMenu}>
+                    <ul className={s.blockMenu}>
                         <li>
-                            <a href="#" className={s.threeD}>Главная
-                                <span aria-hidden="true" className={s.threeDbox}>
+                            <NavLink to='/Resume' className={s.threeD}>Главная
+                                <span aria-hidden="true" className={s.threeD_box}>
         <span className={s.front}>Главная</span>
         <span className={s.back}>Главная</span>
       </span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="#" className={s.threeD}>Мои работы
-                                <span aria-hidden="true" className={s.threeDbox}>
-          <span className={s.front}>Мои работы</span>
-          <span className={s.back}>Мои работы</span>
-	</span>
-                            </a>
+                            <NavLink to='/MyWorks' className={s.threeD}>Мои работы
+                                <span aria-hidden="true" className={s.threeD_box}>
+        <span className={s.front}>Мои работы</span>
+        <span className={s.back}>Мои работы</span>
+      </span>
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="#" className={s.threeD}>Мои навыки
-                                <span aria-hidden="true" className={s.threeDbox}>
-	  <span className={s.front}>Мои навыки</span>
-	  <span className={s.back}>Мои навыки</span>
-	</span>
-                            </a>
+                            <NavLink to='/MyServices' className={s.threeD}>Мои навыки
+                                <span aria-hidden="true" className={s.threeD_box}>
+        <span className={s.front}>Мои навыки</span>
+        <span className={s.back}>Мои навыки</span>
+      </span>
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="#" className={s.threeD}>Контакты
-                                <span aria-hidden="true" className={s.threeDbox}>
-	  <span className={s.front}>Контакты</span>
-	  <span className={s.back}>Контакты</span>
-	</span>
-                            </a>
+                            <NavLink to='/Contacts' className={s.threeD}>Контакты
+                                <span aria-hidden="true" className={s.threeD_box}>
+        <span className={s.front}>Контакты</span>
+        <span className={s.back}>Контакты</span>
+      </span>
+                            </NavLink>
                         </li>
+                        {/*остальные пункты меню*/}
                     </ul>
                 </div>
         )

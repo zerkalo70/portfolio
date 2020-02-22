@@ -1,15 +1,17 @@
 .Footer {
-    grid-area: A;
+    grid-area: Footer;
     color: fuchsia;
     text-align: center;
     grid-column: 1/13;
-    grid-row: 7/8;
+    grid-row: 3/4;
+    background: greenyellow;
+    /*border: 5px solid violet;*/
 }
 
 .cop {
     /*background: yellow;*/
     font-size: 20px;
     font-weight: bolder;
-    color: chartreuse;
-    margin-top: 70px;
+    color: darkgreen;
+    /*margin-top: 70px;*/
 }
