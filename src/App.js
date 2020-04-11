@@ -1,35 +1,69 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Navigation from "./Components/Navigation/Navigation";
-import Resume from "./Components/Resume/Resume";
-import MyWorks from "./Components/MyWorks/MyWorks";
-import MyServices from "./Components/MyServices/MyServices";
-import Freelanc from "./Components/Freelanc/Freelanc";
-import Contacts from "./Components/Contacts/Contacts";
-import Footer from "./Components/Footer/Footer";
 
 
 class App extends React.Component {
     render = () => {
         return (
-            <BrowserRouter>
-            <div className="App">
-            <div className="GrossParent">
-                <Navigation/>
-                <div className="Content">
-                    <Switch>
-                <Route exact path='/Resume' component={Resume}/>
-                <Route path='/MyWorks' component={MyWorks}/>
-                <Route path='/MyServices' component={MyServices}/>
-                <Route path='/Contacts' component={Contacts}/>
-                        <Route path="*" component={Resume}/>
-                    </Switch>
+
+            <div className="Portfolio">
+            <div className="parent">
+                <div className="block_1">
+                    <div className="blockMenu">
+                        <div className="main">Главная</div>
+                        <div className="skills">Скилы</div>
+                        <div className="jobs">Работы</div>
+                        <div className="contacts">Контакты</div>
+                    </div>
                 </div>
-                <Footer/>
+                <div className="block_2">
+                    <div className="blockResume">
+                        <div className="textResume">
+                            <p>Привет!<br/>
+                            Меня зовут Петров Сергей.<br/>
+                            Я front-end разработчик.</p>
+                        </div>
+                        <div className="face">
+                            <img/>
+                        </div>
+                    </div>
+                </div>
+                <div className="block_3">
+                    <div className="blockSkills">
+                        <div className="bS_1">
+                            <p className="title">Мои скиллы</p>
+                        </div>
+                        <div className="bS_2"></div>
+                        <div className="bS_3"></div>
+                        <div className="bS_4"></div>
+                        <div className="bS_5">
+                            <div className="grey"></div>
+                        </div>
+                        <div className="bS_6">
+                            <div className="react">
+                                <p>React</p>
+                            </div>
+                        </div>
+                        <div className="bS_7">
+                            <p className="description">Подробное описание<br/> навыка</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="block_4">
+                    <div className="blockJobs"></div>
+                </div>
+                <div className="block_5">
+                    <div className="blockFreelance"></div>
+                </div>
+                <div className="block_6">
+                    <div className="blockContacts"></div>
+                </div>
+                <div className="block_7">
+                    <div className="blockFooter"></div>
+                </div>
                 </div>
             </div>
-            </BrowserRouter>
+
 
         )
     }
