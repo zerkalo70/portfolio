@@ -125,7 +125,20 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div className="block_7">
-                    <div className="blockFooter"></div>
+                    <div className="blockFooter">
+                        <div className="fio">
+                            <p className="title">Петров Сергей</p>
+                        </div>
+                        <div className="soc">
+                            <div className="soc1"></div>
+                            <div className="soc2"></div>
+                            <div className="soc3"></div>
+                            <div className="soc4"></div>
+                        </div>
+                        <div className="cop">
+                            <p>© 2020 Все права защищены</p>
+                        </div>
+                    </div>
                 </div>
                 </div>
             </div>
