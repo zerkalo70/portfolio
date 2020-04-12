@@ -9,7 +9,7 @@
 .parent {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 400px 500px repeat(4, 400px);
+    grid-template-rows: 90px 400px 500px 710px 204px 500px 400px;
     grid-template-areas: "b_1" "b_2" "b_3" "b_4" "b_5" "b_6" "b_7";
     grid-area: parent;
     grid-column: 2/3;
@@ -112,7 +112,6 @@
     display: grid;
     grid-area: bS_1;
     border-bottom: 2px solid black;
-    /*height: 100px;*/
     grid-row: 1/2;
     grid-column: 1/9;
 }
@@ -134,7 +133,6 @@
     grid-template-rows: 1fr;
     grid-template-areas: "skill";
     grid-area: bS_2;
-    /*height: 300px;*/
     grid-row: 2/3;
     grid-column: 1/9;
 }
@@ -147,7 +145,6 @@
     "bS_2b bS_2b bS_2b"
     "bS_2c bS_2c bS_2c";
     grid-area: skill;
-    /*border-right: 2px solid red;*/
     background-color: white;
     height: 300px;
     grid-row: 2/3;
@@ -162,7 +159,6 @@
     "bS_2b bS_2b bS_2b"
     "bS_2c bS_2c bS_2c";
     grid-area: skill;
-    /*border-right: 2px solid red;*/
     background-color: white;
     height: 300px;
     grid-row: 2/3;
@@ -177,7 +173,6 @@
     "bS_2b bS_2b bS_2b"
     "bS_2c bS_2c bS_2c";
     grid-area: skill;
-    /*border-right: 2px solid red;*/
     background-color: white;
     height: 300px;
     grid-row: 2/3;
@@ -190,8 +185,6 @@
     grid-template-rows: 1fr;
     grid-template-areas: "grey";
     grid-area: bS_2a;
-    /*grid-column: 7/9;*/
-    /*grid-row: 2/3;*/
     background-color: white;
 }
 
@@ -207,8 +200,6 @@
     grid-template-rows: 1fr;
     grid-template-areas: "react";
     grid-area: bS_2b;
-    /*grid-column: 7/9;*/
-    /*grid-row: 3/4;*/
     background-color: white;
 }
 
@@ -230,8 +221,6 @@
 
 .bS_2c {
     grid-area: bS_2c;
-    /*grid-column: 7/9;*/
-    /*grid-row: 4/5;*/
     background-color: darkgray;
 }
 
@@ -250,9 +239,104 @@
 }
 
 .blockJobs {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "bG_1" "bG_2";
     align-self: center;
-    height: 200px;
+    height: 610px;
     border: 2px solid black;
+}
+
+.bG_1 {
+    display: grid;
+    grid-area: bG_1;
+    border-bottom: 2px solid black;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+
+.bG_1 p {
+    align-self: start;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkgrey;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+}
+
+.bG_2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "job1 . job2";
+    grid-area: bG_2;
+    grid-row: 2/3;
+    grid-column: 1/9;
+    /*height: 400px;*/
+}
+
+.job1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "picture" "reviewJob";
+    grid-area: job1;
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+.job2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "picture" "reviewJob";
+    grid-area: job2;
+    grid-row: 1/2;
+    grid-column: 5/8;
+}
+
+.picture {
+    display: grid;
+    grid-area: picture;
+    background-color: darkgrey;
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+
+.picture button {
+    place-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    background-color: gray;
+}
+
+.reviewJob {
+    grid-area: picture;
+    background-color: gainsboro;
+    grid-row: 4/5;
+    grid-column: 1/4;
+}
+
+.nameJob {
+    background-color: darkgrey;
+    font-weight: bold;
+    font-size: 18px;
+    width: 170px;
+    margin-left: 20px;
+}
+
+.shortReview {
+    background-color: darkgrey;
+    font-weight: bold;
+    font-size: 18px;
+    width: 350px;
+    height: 50px;
+    margin-left: 20px;
 }
 
 .block_5 {
@@ -263,9 +347,35 @@
 }
 
 .blockFreelance {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "freelance" "hiring";
     align-self: center;
-    height: 200px;
     border: 2px solid black;
+}
+
+
+.freelance {
+    grid-area: freelance;
+    grid-column: 4/-4;
+    align-self: start;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgrey;
+    margin: 0;
+}
+
+.hiring {
+    grid-area: hiring;
+    grid-column: 6/8;
+    align-self: end;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 10px;
+    background-color: gray;
 }
 
 .block_6 {
@@ -276,9 +386,63 @@
 }
 
 .blockContacts {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "bC_1" "form" "send";
     align-self: center;
-    height: 200px;
+    height: 400px;
     border: 2px solid black;
+}
+
+.bC_1 {
+    display: grid;
+    grid-area: bC_1;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+form {
+    grid-area: form;
+    grid-row: 2/3;
+    grid-column: 3/11;
+}
+
+input {
+    width: 98%;
+    margin-bottom: 10px;
+    height: 35px;
+    background-color: darkgrey;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 98%;
+    height: 150px;
+    background-color: darkgrey;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.send {
+    grid-area: send;
+    grid-row: 3/4;
+    grid-column: 6/8;
+    align-self: end;
+    justify-self: center;
+}
+
+.send button {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: gray;
 }
 
 .block_7 {

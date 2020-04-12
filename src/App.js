@@ -77,13 +77,52 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div className="block_4">
-                    <div className="blockJobs"></div>
+                    <div className="blockJobs">
+                        <div className="bG_1">
+                                <p>Мои работы</p>
+                        </div>
+                        <div className="bG_2">
+                            <div className="job1">
+                                <div className="picture">
+                                    <button>Смотреть</button>
+                                </div>
+                                <div className="reviewJob">
+                                    <p className="nameJob">Название проекта</p>
+                                    <p className="shortReview">Краткое описание</p>
+                                </div>
+                            </div>
+                            <div className="job2">
+                                <div className="picture">
+                                    <button>Смотреть</button>
+                                </div>
+                                <div className="reviewJob">
+                                    <p className="nameJob">Название проекта</p>
+                                    <p className="shortReview">Краткое описание</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="block_5">
-                    <div className="blockFreelance"></div>
+                    <div className="blockFreelance">
+                        <p className="freelance">Рассматриваю варианты удалённой работы</p>
+                        <button className="hiring">Нанять меня</button>
+                    </div>
                 </div>
                 <div className="block_6">
-                    <div className="blockContacts"></div>
+                    <div className="blockContacts">
+                        <div className="bC_1">
+                            <p className="title">Контакты</p>
+                        </div>
+                        <form className="form">
+                            <input value="input"/>
+                            <input value="input"/>
+                            <textarea>textarea</textarea>
+                        </form>
+                        <div className="send">
+                            <button>Отправить</button>
+                        </div>
+                    </div>
                 </div>
                 <div className="block_7">
                     <div className="blockFooter"></div>
