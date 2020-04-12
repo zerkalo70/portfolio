@@ -101,10 +101,10 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "bs_1"
-    "bs_2 bs_3 bs_5"
-    "bs_2 bs_3 bs_6"
-    "bs_2 bs_4 bs_7";
+    grid-template-areas: "bs_1 bs_1 bs_1 bs_1 bs_1 bs_1 bs_1 bs_1"
+    "bs_2 bs_2 . bs_3 bs_3 . bs_5 bs_5"
+    "bs_2 bs_2 . bs_3 bs_3 . bs_6 bs_6"
+    "bs_2 bs_2 . bs_4 bs_4 . bs_7 bs_7";
     align-self: center;
     height: 400px;
     border: 2px solid black;
