@@ -1,0 +1,88 @@
+.myFooter {
+    display: grid;
+    grid-area: myFooter;
+    grid-row: 7/8;
+    background-color: mediumspringgreen;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "fio" "soc" "cop";
+    align-self: end;
+    margin-bottom: 10px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.fio {
+    display: grid;
+    grid-area: fio;
+    grid-row: 1/2;
+    grid-column: 1/13;
+}
+
+.soc {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "soc1 soc2 soc3 soc4";
+    grid-area: soc;
+    grid-row: 2/3;
+    grid-column: 4/10;
+    border: 2px solid black;
+}
+
+.soc1 {
+    grid-area: soc1;
+    grid-column: 1/2;
+    background-color: darkgrey;
+}
+
+.soc2 {
+    grid-area: soc2;
+    grid-column: 3/4;
+    background-color: darkgrey;
+}
+
+.soc3 {
+    grid-area: soc3;
+    grid-column: 5/6;
+    background-color: darkgrey;
+}
+
+.soc4 {
+    grid-area: soc4;
+    grid-column: 7/8;
+    background-color: darkgrey;
+}
+
+.cop {
+    display: grid;
+    grid-area: cop;
+    grid-row: 3/4;
+    grid-column: 4/10;
+}
+
+.cop p {
+    align-self: end;
+    justify-self: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    width: 300px;
+    background-color: darkgrey;
+}
+
+.title {
+    align-self: start;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkgrey;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+}

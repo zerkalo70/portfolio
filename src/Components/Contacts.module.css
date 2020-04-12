@@ -1,0 +1,76 @@
+.myContacts {
+    display: grid;
+    grid-area: myContacts;
+    grid-row: 6/7;
+    background-color: palevioletred;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "contact" "form" "send";
+    align-self: center;
+    height: 400px;
+    border: 2px solid black;
+}
+
+.contact {
+    display: grid;
+    grid-area: contact;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+form {
+    grid-area: form;
+    grid-row: 2/3;
+    grid-column: 3/11;
+}
+
+input {
+    width: 98%;
+    margin-bottom: 10px;
+    height: 35px;
+    background-color: darkgrey;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 98%;
+    height: 150px;
+    background-color: darkgrey;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.send {
+    grid-area: send;
+    grid-row: 3/4;
+    grid-column: 6/8;
+    align-self: end;
+    justify-self: center;
+}
+
+.send button {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: gray;
+}
+.title {
+    align-self: start;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkgrey;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+}

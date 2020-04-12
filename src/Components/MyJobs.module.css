@@ -1,0 +1,107 @@
+.myJobs {
+    display: grid;
+    grid-area: myJobs;
+    grid-row: 4/5;
+    background-color: plum;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "bG_1" "bG_2";
+    align-self: center;
+    height: 610px;
+    border: 2px solid black;
+}
+
+.bG_1 {
+    display: grid;
+    grid-area: bG_1;
+    border-bottom: 2px solid black;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+
+.bG_1 p {
+    align-self: start;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkgrey;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+}
+
+.bG_2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "job1 . job2";
+    grid-area: bG_2;
+    grid-row: 2/3;
+    grid-column: 1/9;
+    /*height: 400px;*/
+}
+
+.job1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "picture" "reviewJob";
+    grid-area: job1;
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+.job2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "picture" "reviewJob";
+    grid-area: job2;
+    grid-row: 1/2;
+    grid-column: 5/8;
+}
+
+.picture {
+    display: grid;
+    grid-area: picture;
+    background-color: darkgrey;
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+
+.picture button {
+    place-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    background-color: gray;
+}
+
+.reviewJob {
+    grid-area: picture;
+    background-color: gainsboro;
+    grid-row: 4/5;
+    grid-column: 1/4;
+}
+
+.nameJob {
+    background-color: darkgrey;
+    font-weight: bold;
+    font-size: 18px;
+    width: 170px;
+    margin-left: 20px;
+}
+
+.shortReview {
+    background-color: darkgrey;
+    font-weight: bold;
+    font-size: 18px;
+    width: 350px;
+    height: 50px;
+    margin-left: 20px;
+}

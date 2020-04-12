@@ -1,0 +1,32 @@
+.myResume {
+    display: grid;
+    grid-area: myResume;
+    grid-row: 2/3;
+    background-color: lightpink;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "tR face" "tR face" "tR face";
+    align-self: center;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.textResume {
+    grid-area: tR;
+    grid-column: 2/6;
+    grid-row: 2/3;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkgray;
+}
+
+.face {
+    grid-area: face;
+    grid-column: 9/12;
+    grid-row: 1/4;
+    background-color: darkgray;
+}

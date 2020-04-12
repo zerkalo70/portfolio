@@ -1,0 +1,38 @@
+.myFreelance {
+    display: grid;
+    grid-area: myFreelance;
+    grid-row: 5/6;
+    background-color: antiquewhite;
+}
+
+.freelance {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "textF" "hiring";
+    align-self: center;
+    border: 2px solid black;
+}
+
+
+.textF {
+    grid-area: textF;
+    grid-column: 4/-4;
+    align-self: start;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgrey;
+    margin: 0;
+}
+
+.hiring {
+    grid-area: hiring;
+    grid-column: 6/8;
+    align-self: end;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 10px;
+    background-color: gray;
+}
