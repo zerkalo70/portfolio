@@ -33,19 +33,46 @@ class App extends React.Component {
                         <div className="bS_1">
                             <p className="title">Мои скиллы</p>
                         </div>
-                        <div className="bS_2"></div>
-                        <div className="bS_3"></div>
-                        <div className="bS_4"></div>
-                        <div className="bS_5">
-                            <div className="grey"></div>
-                        </div>
-                        <div className="bS_6">
-                            <div className="react">
-                                <p>React</p>
+                        <div className="bS_2">
+                        <div className="skill1">
+                            <div className="bS_2a">
+                                <div className="grey"></div>
+                            </div>
+                            <div className="bS_2b">
+                                <div className="react">
+                                    <p>React</p>
+                                </div>
+                            </div>
+                            <div className="bS_2c">
+                                <p className="description">Подробное описание<br/> навыка</p>
                             </div>
                         </div>
-                        <div className="bS_7">
-                            <p className="description">Подробное описание<br/> навыка</p>
+                        <div className="skill2">
+                            <div className="bS_2a">
+                                <div className="grey"></div>
+                            </div>
+                            <div className="bS_2b">
+                                <div className="react">
+                                    <p>React</p>
+                                </div>
+                            </div>
+                            <div className="bS_2c">
+                                <p className="description">Подробное описание<br/> навыка</p>
+                            </div>
+                        </div>
+                        <div className="skill3">
+                            <div className="bS_2a">
+                                <div className="grey"></div>
+                            </div>
+                            <div className="bS_2b">
+                                <div className="react">
+                                    <p>React</p>
+                                </div>
+                            </div>
+                            <div className="bS_2c">
+                                <p className="description">Подробное описание<br/> навыка</p>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
