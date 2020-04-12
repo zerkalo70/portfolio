@@ -152,7 +152,7 @@
     grid-row: 4/5;
     border: 2px solid blue;
     border-bottom: none;
-    background-color: darkgray;
+    background-color: red;
 }
 
 .bS_5 {
@@ -203,7 +203,7 @@
     grid-area: bS_7;
     grid-column: 7/9;
     grid-row: 4/5;
-    background-color: darkgray;
+    /*background-color: darkgray;*/
 }
 
 .description {
