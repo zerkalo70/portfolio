@@ -2,18 +2,49 @@
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 1fr;
-    grid-template-areas: "parent";
+    grid-template-areas: "." "parent" ".";
     background-color: darkseagreen;
 }
 
 .parent {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 400px 500px 710px 204px 500px 260px;
+    grid-template-rows: 90px 400px 500px 710px 204px 500px 257px;
+    /*grid-template-rows: 1fr 700px 500px 710px 204px 500px 257px;*/
     grid-template-areas: "header" "myResume" "mySkills"
     "myJobs" "myFreelance" "myContacts" "myFooter";
     grid-area: parent;
     grid-column: 2/3;
+}
+
+@media screen and (max-width: 1160px) {
+    .parent {
+        grid-template-rows: 90px 400px 500px 1234px 204px 500px 257px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .parent {
+        grid-template-rows: 90px 400px 790px 1234px 204px 500px 257px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .parent {
+        grid-template-rows: 90px 560px 790px 1234px 204px 500px 257px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .parent {
+        grid-template-rows: 90px 560px 1100px 1234px 204px 500px 257px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .parent {
+        grid-template-rows: 90px 530px 1100px 1234px 204px 500px 257px;
+    }
 }
 
 

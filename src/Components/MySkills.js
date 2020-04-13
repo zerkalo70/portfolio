@@ -6,10 +6,10 @@ class MySkills extends React.Component {
         return (
             <div className={s.mySkills}>
                 <div className={s.skills}>
-                    <div className={s.bS_1}>
+                    <div className={s.heading}>
                         <p className={s.title}>Мои скиллы</p>
                     </div>
-                    <div className={s.bS_2}>
+                    <div className={s.overview}>
                         <div className={s.skill1}>
                             <div className={s.bS_2a}>
                                 <div className={s.grey}></div>

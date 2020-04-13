@@ -1,7 +1,11 @@
 .header {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "menu";
     grid-area: header;
     grid-row: 1/2;
+    height: 90px;
     background-color: deepskyblue;
 }
 
@@ -10,11 +14,11 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "main skills jobs contacts";
-    /*grid-column-gap: 10px;*/
+    grid-area: menu;
+    grid-column: 3/5;
     align-self: center;
-    justify-self: end;
     height: 25px;
-    width: 50%;
+    margin: 20px 0 20px 0;
     border: 2px solid black;
 }
 
@@ -40,7 +44,18 @@
 
 a {
     text-decoration: none;
-    /*font-weight: bold;*/
     font-size: 16px;
     margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .menu {
+        grid-column: 2/5;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        grid-column: 1/5;
+    }
 }

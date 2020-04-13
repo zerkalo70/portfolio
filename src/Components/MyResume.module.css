@@ -1,7 +1,10 @@
 .myResume {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "resume";
     grid-area: myResume;
-    grid-row: 2/3;
+    height: 400px;
     background-color: lightpink;
 }
 
@@ -9,7 +12,8 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "tR face" "tR face" "tR face";
+    grid-template-areas: "face" "tR face" "face";
+    grid-area: resume;
     align-self: center;
     height: 300px;
     border: 2px solid black;
@@ -19,8 +23,10 @@
     grid-area: tR;
     grid-column: 2/6;
     grid-row: 2/3;
+    height: 150px;
     font-size: 25px;
     font-weight: bold;
+    text-align: center;
     background-color: darkgray;
 }
 
@@ -28,5 +34,85 @@
     grid-area: face;
     grid-column: 9/12;
     grid-row: 1/4;
+    height: 300px;
     background-color: darkgray;
+}
+
+@media screen and (max-width: 1280px) {
+    .textResume {
+        grid-column: 2/7;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .face {
+        grid-column: 8/12;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .myResume {
+        height: 560px;
+    }
+
+    .resume {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "tR" "face";
+        grid-area: resume;
+        align-self: center;
+        height: 460px;
+    }
+
+    .textResume {
+        grid-column: 4/10;
+        grid-row: 1/2;
+        height: 150px;
+    }
+
+    .face {
+        grid-column: 5/9;
+        grid-row: 2/3;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+
+    .textResume {
+        grid-column: 3/11;
+    }
+
+    .face {
+        grid-column: 4/10;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .myResume {
+        height: 530px;
+    }
+    .resume {
+        height: 430px;
+    }
+    .textResume {
+        grid-column: 3/11;
+        height: 120px;
+        font-size: 18px;
+    }
+
+    .face {
+        grid-column: 3/11;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .textResume {
+        grid-column: 1/13;
+    }
+
+    .face {
+        grid-column: 1/13;
+    }
 }

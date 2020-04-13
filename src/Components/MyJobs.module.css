@@ -2,6 +2,7 @@
     display: grid;
     grid-area: myJobs;
     grid-row: 4/5;
+    height: 710px;
     background-color: plum;
 }
 
@@ -36,13 +37,12 @@
 
 .bG_2 {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 450px 1fr 450px;
     grid-template-rows: 1fr;
     grid-template-areas: "job1 . job2";
     grid-area: bG_2;
     grid-row: 2/3;
     grid-column: 1/9;
-    /*height: 400px;*/
 }
 
 .job1 {
@@ -52,7 +52,8 @@
     grid-template-areas: "picture" "reviewJob";
     grid-area: job1;
     grid-row: 1/2;
-    grid-column: 1/4;
+    grid-column: 1/2;
+    width: 450px;
 }
 
 .job2 {
@@ -62,7 +63,8 @@
     grid-template-areas: "picture" "reviewJob";
     grid-area: job2;
     grid-row: 1/2;
-    grid-column: 5/8;
+    grid-column: 3/4;
+    width: 450px;
 }
 
 .picture {
@@ -105,3 +107,96 @@
     height: 50px;
     margin-left: 20px;
 }
+
+@media screen and (max-width: 1160px) {
+    .myJobs {
+        height: 1234px;
+    }
+
+    .jobs {
+        height: 1134px;
+    }
+
+    .bG_2 {
+        grid-template-columns: 1fr 450px 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "job1" "job2";
+        height: 1034px;
+    }
+
+    .job1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin-bottom: 10px;
+    }
+
+    .job2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .bG_2 {
+        grid-template-columns: 1fr 350px 1fr;
+    }
+
+    .job1 {
+        width: 350px;
+    }
+
+    .job2 {
+        width: 350px;
+    }
+
+    .nameJob {
+        width: 170px;
+    }
+
+    .shortReview {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .bG_2 {
+        grid-template-columns: 1fr 300px 1fr;
+    }
+
+    .job1 {
+        width: 300px;
+    }
+
+    .job2 {
+        width: 300px;
+    }
+
+    .shortReview {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bG_2 {
+        grid-template-columns: 1fr 240px 1fr;
+    }
+
+    .job1 {
+        width: 240px;
+    }
+
+    .job2 {
+        width: 240px;
+    }
+
+    .shortReview {
+        width: 200px;
+    }
+}
+
+
+
