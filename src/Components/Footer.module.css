@@ -7,7 +7,7 @@
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "fio" "soc" "cop";
     align-self: end;
@@ -20,7 +20,18 @@
     display: grid;
     grid-area: fio;
     grid-row: 1/2;
-    grid-column: 1/13;
+    grid-column: 2/3;
+}
+
+.title {
+    align-self: start;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkgrey;
+    margin: 0;
+    width: 200px;
+    text-align: center;
 }
 
 .soc {
@@ -30,8 +41,9 @@
     grid-template-areas: "soc1 soc2 soc3 soc4";
     grid-area: soc;
     grid-row: 2/3;
-    grid-column: 4/10;
+    grid-column: 2/3;
     border: 2px solid black;
+    width: 520px;
 }
 
 .soc1 {
@@ -62,7 +74,8 @@
     display: grid;
     grid-area: cop;
     grid-row: 3/4;
-    grid-column: 4/10;
+    grid-column: 2/3;
+    text-align: center;
 }
 
 .cop p {
@@ -76,13 +89,28 @@
     background-color: darkgrey;
 }
 
-.title {
-    align-self: start;
-    justify-self: center;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: darkgrey;
-    margin: 0;
-    width: 200px;
-    text-align: center;
+@media screen and (max-width: 670px) {
+    .myFooter {
+        height: 175px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 45px) 35px;
+        height: 125px;
+    }
+
+    .soc {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .soc {
+        width: 270px;
+    }
+
+    .cop p {
+        width: 270px;
+    }
 }

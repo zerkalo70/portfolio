@@ -150,8 +150,6 @@
     }
 
     .skills {
-        /*grid-template-columns: 1fr;*/
-        /*grid-template-rows: repeat(2, 1fr);*/
         height: 690px;
     }
 
@@ -224,21 +222,6 @@
 }
 
 @media screen and (max-width: 360px) {
-
-   /* .mySkills {
-        height: 1100px;
-    }
-
-    .skills {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        height: 1000px;
-    }
-
-    .heading {
-        display: grid;
-        grid-area: heading;
-    }*/
 
     .overview {
         grid-template-columns: 1fr 240px 1fr;

@@ -41,9 +41,15 @@
     }
 }
 
+@media screen and (max-width: 670px) {
+    .parent {
+        grid-template-rows: 90px 560px 1100px 1234px 204px 500px 175px;
+    }
+}
+
 @media screen and (max-width: 645px) {
     .parent {
-        grid-template-rows: 90px 530px 1100px 1234px 204px 500px 257px;
+        grid-template-rows: 90px 530px 1100px 1234px 204px 500px 175px;
     }
 }
 
