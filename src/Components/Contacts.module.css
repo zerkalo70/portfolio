@@ -1,18 +1,24 @@
 .myContacts {
     display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: "parent";
     grid-area: myContacts;
     grid-row: 6/7;
-    height: 500px;
+    grid-column: 1/2;
+    /*height: 400px;*/
     background-color: palevioletred;
 }
 
-.contacts {
+.parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "contact" "form" "send";
     align-self: center;
     height: 400px;
+    grid-row: 2/3;
+    grid-column: 2/3;
     border: 2px solid black;
 }
 

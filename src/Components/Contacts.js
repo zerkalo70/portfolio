@@ -5,7 +5,7 @@ class Contacts extends React.Component {
     render = () => {
         return (
             <div className={s.myContacts}>
-                <div className={s.contacts}>
+                <div className={s.parent}>
                     <div className={s.contact}>
                         <p className={s.title}>Контакты</p>
                     </div>

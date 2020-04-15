@@ -14,7 +14,6 @@ class App extends React.Component {
         return (
 
             <div className="Portfolio">
-            <div className="parent">
                 <Header/>
                 <MyResume/>
                 <MySkills/>
@@ -22,14 +21,12 @@ class App extends React.Component {
                 <MyFreelance/>
                 <Contacts/>
                 <Footer/>
-                </div>
             </div>
 
 
         )
     }
 }
-
 
 
 export default App;

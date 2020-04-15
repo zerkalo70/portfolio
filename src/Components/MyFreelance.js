@@ -5,7 +5,7 @@ class MyFreelance extends React.Component {
     render = () => {
         return (
             <div className={s.myFreelance}>
-                <div className={s.freelance}>
+                <div className={s.parent}>
                     <p className={s.textF}>Рассматриваю варианты удалённой работы</p>
                     <button className={s.hiring}>Нанять меня</button>
                 </div>
