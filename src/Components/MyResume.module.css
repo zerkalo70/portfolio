@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 1060px) {
     .myResume {
-        height: 550px;
+        height: 530px;
     }
     .parent {
         display: grid;
@@ -77,8 +77,7 @@
         grid-area: face;
         grid-column: 2/3;
         grid-row: 3/4;
-        justify-self: center;
-        width: 270px;
+        margin: 0 45px 0 45px;
         background-color: darkgray;
     }
 }
@@ -99,6 +98,10 @@
         font-weight: bold;
         margin: 0;
     }
+
+    .face {
+        margin: 0 5px 0 5px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -111,6 +114,6 @@
     }
 
     .face {
-        width: 230px;
+        margin: 0;
     }
 }
