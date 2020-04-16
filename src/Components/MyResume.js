@@ -11,9 +11,7 @@ class MyResume extends React.Component {
                             <p>Меня зовут Петров Сергей.<br/>
                             Я front-end разработчик.</p>
                     </div>
-                    <div className={s.face}>
-                        <img/>
-                    </div>
+                    <div className={s.face}></div>
                 </div>
             </div>
         )
