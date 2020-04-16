@@ -30,15 +30,18 @@
     /*border: 2px solid #fff0f6;*/
 }
 
-.textResume h1 {
-    font-size: 50px;
-    font-weight: 800;
-    font-style: italic;
-    /*font-family: 'Marck Script', cursive;*/
-    font-family: 'Old Standard TT', serif;
-    /*font-family: 'Meie Script', cursive;*/
+@font-face {
+    font-family: Test;
+    src: url('fonts/17526.ttf');
+}
+
+.textResume h1  {
+    font-family: Test, cursive;
+    font-size: 100px;
+    font-weight: 400;
     color: #fff0f6;
     margin: 0;
+    padding-top: 30px;
 }
 
 .textResume h2 {
@@ -52,7 +55,6 @@
 
 .textResume p {
     font-size: 30px;
-    /*font-size: 25px;*/
     font-weight: 400;
     font-style: italic;
     font-family: 'Old Standard TT', serif;
@@ -64,7 +66,6 @@
     display: grid;
     grid-column: 4/5;
     grid-row: 1/4;
-    /*background-color: darkgray;*/
     /*border: 2px solid #fff0f6;*/
 }
 
@@ -92,11 +93,11 @@
         grid-row: 1/2;
         text-align: center;
         margin: 0;
-        /*background-color: darkgray;*/
     }
 
     .textResume h1 {
-        font-size: 40px;
+        font-size: 80px;
+        padding-top: 0;
     }
 
     .face {
@@ -120,7 +121,7 @@
     }
 
     .textResume h1 {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .textResume h2 {
@@ -144,7 +145,7 @@
     }
 
     .textResume h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .textResume h2 {
@@ -158,5 +159,12 @@
     .face {
         margin: 0;
     }
+}
+
+@font-face {
+    font-family: 'Test';
+    src: url('fonts/17526.ttf') format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
