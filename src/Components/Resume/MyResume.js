@@ -1,5 +1,7 @@
 import React from "react";
 import s from './MyResume.module.css'
+import myFoto from './myFoto.jpg'
+
 
 class MyResume extends React.Component {
     render = () => {
@@ -7,11 +9,13 @@ class MyResume extends React.Component {
             <div className={s.myResume}>
                 <div className={s.parent}>
                     <div className={s.textResume}>
-                        <h1>Привет!</h1>
-                            <p>Меня зовут Петров Сергей.<br/>
-                            Я front-end разработчик.</p>
+                        <h2>Привет!</h2>
+                        <p>Я front-end разработчик</p>
+                        <h1> Петров Сергей.</h1>
                     </div>
-                    <div className={s.face}></div>
+                    <div className={s.face}>
+                        <img src={myFoto}/>
+                    </div>
                 </div>
             </div>
         )

@@ -6,8 +6,7 @@
     grid-area: myFreelance;
     grid-row: 5/6;
     grid-column: 1/2;
-    /*height: 400px;*/
-    background-color: antiquewhite;
+    background-color: #050505;
 }
 
 .parent {

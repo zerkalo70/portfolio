@@ -7,18 +7,18 @@
     grid-row: 2/3;
     grid-column: 1/2;
     height: 400px;
-    background-color: lightpink;
+    background-color: #050029;
 }
 
 .parent {
     display: grid;
-    grid-template-columns: 1fr 360px 1fr 270px 1fr;
+    grid-template-columns: 1fr 400px 1fr 270px 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "face" "tR face" "face";
     grid-area: parent;
     grid-row: 2/3;
     grid-column: 2/3;
-    border: 2px solid black;
+    /*border: 2px solid yellow;*/
 }
 
 .textResume {
@@ -27,18 +27,36 @@
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
-    background-color: darkgray;
+    /*border: 2px solid #fff0f6;*/
 }
 
 .textResume h1 {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 800;
+    font-style: italic;
+    /*font-family: 'Marck Script', cursive;*/
+    font-family: 'Old Standard TT', serif;
+    /*font-family: 'Meie Script', cursive;*/
+    color: #fff0f6;
+    margin: 0;
+}
+
+.textResume h2 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Old Standard TT', serif;
+    color: #fff0f6;
     margin: 0;
 }
 
 .textResume p {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 30px;
+    /*font-size: 25px;*/
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Old Standard TT', serif;
+    color: #fff0f6;
     margin: 0;
 }
 
@@ -46,7 +64,13 @@
     display: grid;
     grid-column: 4/5;
     grid-row: 1/4;
-    background-color: darkgray;
+    /*background-color: darkgray;*/
+    /*border: 2px solid #fff0f6;*/
+}
+
+.face img {
+    height: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 1060px) {
@@ -56,7 +80,7 @@
     .parent {
         display: grid;
         grid-template-columns: 1fr 360px 1fr;
-        grid-template-rows: 120px 10px 300px;
+        grid-template-rows: 150px 10px 300px;
         grid-template-areas: "tR" "face";
         height: 430px;
     }
@@ -68,7 +92,11 @@
         grid-row: 1/2;
         text-align: center;
         margin: 0;
-        background-color: darkgray;
+        /*background-color: darkgray;*/
+    }
+
+    .textResume h1 {
+        font-size: 40px;
     }
 
     .face {
@@ -91,8 +119,16 @@
         margin: 0;
     }
 
+    .textResume h1 {
+        font-size: 35px;
+    }
+
+    .textResume h2 {
+        font-size: 35px;
+    }
+
     .textResume p {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
         margin: 0;
     }
@@ -107,11 +143,20 @@
         grid-template-columns: 1fr 230px 1fr;
     }
 
+    .textResume h1 {
+        font-size: 30px;
+    }
+
+    .textResume h2 {
+        font-size: 30px;
+    }
+
     .textResume p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .face {
         margin: 0;
     }
 }
+
