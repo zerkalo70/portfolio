@@ -6,25 +6,26 @@
     grid-area: myResume;
     grid-row: 2/3;
     grid-column: 1/2;
-    height: 400px;
     background-color: #050029;
 }
 
 .parent {
     display: grid;
-    grid-template-columns: 1fr 400px 1fr 270px 1fr;
+    grid-template-columns: 500px 1fr 350px;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "face" "tR face" "face";
     grid-area: parent;
     grid-row: 2/3;
     grid-column: 2/3;
+    height: 85%;
+    align-self: center;
     /*border: 2px solid yellow;*/
 }
 
 .textResume {
     display: grid;
     grid-area: tR;
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 2/3;
     text-align: center;
     /*border: 2px solid #fff0f6;*/
@@ -64,7 +65,7 @@
 
 .face {
     display: grid;
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 1/4;
     /*border: 2px solid #fff0f6;*/
 }
@@ -75,37 +76,76 @@
 }
 
 @media screen and (max-width: 1060px) {
-    .myResume {
-        height: 530px;
-    }
+
     .parent {
         display: grid;
-        grid-template-columns: 1fr 360px 1fr;
-        grid-template-rows: 150px 10px 300px;
-        grid-template-areas: "tR" "face";
-        height: 430px;
+        grid-template-columns: 450px 1fr 300px;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .textResume h1 {
+        font-size: 80px;
+    }
+
+    .textResume h2 {
+        font-size: 40px;
+    }
+
+    .textResume p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 300px 1fr 290px;
+    }
+
+    .textResume h1 {
+        font-size: 70px;
+    }
+
+    .textResume h2 {
+        font-size: 35px;
+    }
+
+    .textResume p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .parent {
+        display: grid;
+            grid-template-columns: 1fr 360px 1fr;
+            grid-template-rows: 160px 20px 350px;
+            grid-template-areas: "tR" "face";
+            height: 530px;
     }
 
     .textResume {
-        display: grid;
-        grid-area: tR;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        text-align: center;
-        margin: 0;
-    }
+       grid-column: 2/3;
+       grid-row: 1/2;
+   }
 
     .textResume h1 {
         font-size: 80px;
         padding-top: 0;
     }
 
+    .textResume h2 {
+        font-size: 40px;
+    }
+
+    .textResume p {
+        font-size: 30px;
+    }
+
     .face {
-        display: grid;
         grid-column: 2/3;
         grid-row: 3/4;
         margin: 0 45px 0 45px;
-        background-color: darkgray;
     }
 }
 
@@ -161,10 +201,5 @@
     }
 }
 
-@font-face {
-    font-family: 'Test';
-    src: url('fonts/17526.ttf') format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+
 
