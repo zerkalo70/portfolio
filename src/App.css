@@ -1,7 +1,7 @@
 .Portfolio {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 88vh 500px 550px 204px 500px 257px;
+    grid-template-rows: 80px 88vh 200vh 550px 204px 500px 257px;
     /*grid-template-rows: 80px 400px 500px 550px 204px 500px 257px;*/
     grid-template-areas: "header" "myResume"
     "mySkills" "myJobs" "myFreelance" "myContacts" "myFooter";
