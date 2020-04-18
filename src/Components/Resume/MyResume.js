@@ -8,10 +8,10 @@ class MyResume extends React.Component {
         return (
             <div className={s.myResume}>
                 <div className={s.parent}>
-                    <div className={s.textResume}>
-                        <h2>Привет!</h2>
-                        <p>Я front-end разработчик</p>
-                        <h1> Петров Сергей.</h1>
+                    <div className={s.text}>
+                        <span>Привет!</span>
+                        <span>Я front-end разработчик</span>
+                        <span> Петров Сергей.</span>
                     </div>
                     <div className={s.face}>
                         <img src={myFoto}/>

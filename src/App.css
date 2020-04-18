@@ -1,7 +1,7 @@
 .Portfolio {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 100vh 500px 550px 204px 500px 257px;
+    grid-template-rows: 80px 88vh 500px 550px 204px 500px 257px;
     /*grid-template-rows: 80px 400px 500px 550px 204px 500px 257px;*/
     grid-template-areas: "header" "myResume"
     "mySkills" "myJobs" "myFreelance" "myContacts" "myFooter";
@@ -10,40 +10,41 @@
 
 @media screen and (max-width: 1150px) {
     .Portfolio {
-        grid-template-rows: 80px 100vh 810px 910px 204px 500px 257px;
-
-        /*grid-template-rows: 80px 400px 500px 910px 204px 500px 257px;*/
+        grid-template-rows: 80px 88vh 810px 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 1060px) {
     .Portfolio {
-        grid-template-rows: 80px 100vh 810px 910px 204px 500px 257px;
-        /*grid-template-rows: 80px 530px 810px 910px 204px 500px 257px;*/
+        grid-template-rows: 80px 88vh 810px 910px 204px 500px 257px;
+    }
+}@media screen and (max-width: 960px) {
+    .Portfolio {
+        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 800px) {
     .Portfolio {
-        grid-template-rows: 80px 100vh 810px 910px 204px 500px 257px;
-
-        /*grid-template-rows: 80px 530px 810px 1270px 204px 500px 257px;*/
+        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 750px) {
     .Portfolio {
-        grid-template-rows: 80px 100vh 810px 910px 204px 500px 257px;
-
-        /*grid-template-rows: 80px 530px 1120px 1270px 204px 500px 175px;*/
+        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 670px) {
-    .parent {
-        grid-template-rows: 80px 100vh 810px 910px 204px 500px 257px;
+    .Portfolio {
+        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
+    }
+}
 
-        /*grid-template-rows: 80px 530px 1120px 1270px 204px 500px 175px;*/
+@media screen and (max-width: 460px) {
+    .Portfolio {
+        grid-template-rows: 80px 127vh 810px 910px 204px 500px 257px;
     }
 }
 

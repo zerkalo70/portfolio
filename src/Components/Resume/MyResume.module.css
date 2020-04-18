@@ -1,52 +1,47 @@
 .myResume {
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas: "parent";
-    grid-area: myResume;
+    grid-template-rows: 88vh;
     grid-row: 2/3;
     grid-column: 1/2;
+    align-self: center;
     background-color: #050029;
 }
 
 .parent {
     display: grid;
-    grid-template-columns: 500px 1fr 350px;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "face" "tR face" "face";
-    grid-area: parent;
-    grid-row: 2/3;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
     grid-column: 2/3;
-    height: 85%;
+    grid-row: 1/2;
     align-self: center;
-    /*border: 2px solid yellow;*/
+    border: 2px solid yellow;
 }
 
-.textResume {
+.text {
     display: grid;
-    grid-area: tR;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 1fr 80px 45px 120px 1fr;
     grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+span:nth-child(1) {
+    grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
-    /*border: 2px solid #fff0f6;*/
-}
-
-@font-face {
-    font-family: Test;
-    src: url('fonts/17526.ttf');
-}
-
-.textResume h1  {
     font-family: Test, cursive;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 400;
-    color: #fff0f6;
     margin: 0;
-    padding-top: 30px;
+    color: #fff0f6;
 }
 
-.textResume h2 {
-    font-size: 40px;
+span:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 35px;
     font-weight: 400;
     font-style: italic;
     font-family: 'Old Standard TT', serif;
@@ -54,151 +49,144 @@
     margin: 0;
 }
 
-.textResume p {
-    font-size: 30px;
+span:nth-child(3)  {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+    /*align-self: start;*/
+    font-family: Test, cursive;
+    font-size: 130px;
     font-weight: 400;
-    font-style: italic;
-    font-family: 'Old Standard TT', serif;
     color: #fff0f6;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .face {
     display: grid;
-    grid-column: 3/4;
-    grid-row: 1/4;
-    /*border: 2px solid #fff0f6;*/
+    grid-template-columns: 1fr 250px 1fr;
+    grid-template-rows: 350px;
+    grid-column: 2/3;
 }
 
 .face img {
+    display: grid;
+    grid-column: 2/3;
     height: 100%;
     width: 100%;
 }
 
 @media screen and (max-width: 1060px) {
 
-    .parent {
-        display: grid;
-        grid-template-columns: 450px 1fr 300px;
-        grid-template-rows: repeat(3, 1fr);
+    span:nth-child(1) {
+        font-size: 70px;
     }
 
-    .textResume h1 {
-        font-size: 80px;
-    }
-
-    .textResume h2 {
-        font-size: 40px;
-    }
-
-    .textResume p {
+    span:nth-child(2) {
         font-size: 30px;
+    }
+
+    span:nth-child(3)  {
+        font-size: 100px;
     }
 }
 
 @media screen and (max-width: 960px) {
-    .parent {
-        display: grid;
-        grid-template-columns: 300px 1fr 290px;
+
+    .myResume {
+        grid-template-rows: 140vh;
     }
 
-    .textResume h1 {
+    .parent {
+        grid-template-columns: 100%;
+        grid-template-rows: 280px 1fr;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .text {
+        grid-template-columns: 1fr 500px 1fr;
+        grid-template-rows: 80px 1fr 130px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 25px;
+    }
+
+    span:nth-child(1) {
+        grid-column: 2/3;
+        grid-row: 1/2;
         font-size: 70px;
     }
 
-    .textResume h2 {
-        font-size: 35px;
-    }
-
-    .textResume p {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .parent {
-        display: grid;
-            grid-template-columns: 1fr 360px 1fr;
-            grid-template-rows: 160px 20px 350px;
-            grid-template-areas: "tR" "face";
-            height: 530px;
-    }
-
-    .textResume {
-       grid-column: 2/3;
-       grid-row: 1/2;
-   }
-
-    .textResume h1 {
-        font-size: 80px;
-        padding-top: 0;
-    }
-
-    .textResume h2 {
-        font-size: 40px;
-    }
-
-    .textResume p {
+    span:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 2/3;
         font-size: 30px;
     }
 
-    .face {
+    span:nth-child(3)  {
         grid-column: 2/3;
         grid-row: 3/4;
-        margin: 0 45px 0 45px;
+        font-size: 100px;
     }
+
+    .face {
+        grid-template-columns: 1fr 250px 1fr;
+        grid-template-rows: 350px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .text {
+        grid-template-columns: 1fr 350px 1fr;
+    }
+
+    span:nth-child(1) {
+        font-size: 70px;
+    }
+
+    span:nth-child(2) {
+        font-size: 25px;
+    }
+
+    span:nth-child(3)  {
+        font-size: 90px;
+    }
+
 }
 
 @media screen and (max-width: 460px) {
+    .myResume {
+        grid-template-rows: 127vh;
+    }
     .parent {
-        grid-template-columns: 1fr 280px 1fr;
+        grid-template-rows: 210px 1fr;
     }
 
-    .textResume h1 {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0;
+    .text {
+        grid-template-columns: 1fr 230px 1fr;
+        grid-template-rows: 50px 1fr 90px;
     }
 
-    .textResume h1 {
+    span:nth-child(1) {
         font-size: 60px;
     }
 
-    .textResume h2 {
-        font-size: 35px;
+    span:nth-child(2) {
+        font-size: 20px;
     }
 
-    .textResume p {
-        font-size: 22px;
-        font-weight: bold;
-        margin: 0;
-    }
-
-    .face {
-        margin: 0 5px 0 5px;
+    span:nth-child(3)  {
+        font-size: 60px;
     }
 }
 
-@media screen and (max-width: 360px) {
-    .parent {
-        grid-template-columns: 1fr 230px 1fr;
-    }
 
-    .textResume h1 {
-        font-size: 50px;
-    }
-
-    .textResume h2 {
-        font-size: 30px;
-    }
-
-    .textResume p {
-        font-size: 18px;
-    }
-
-    .face {
-        margin: 0;
-    }
+@font-face {
+    font-family: Test;
+    src: url('fonts/17526.ttf');
 }
 
 
