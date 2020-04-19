@@ -1,26 +1,25 @@
 .mySkills {
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 95% 5%;
     grid-row: 3/4;
     grid-column: 1/2;
-    height: 180vh;
-    /*background-color: #070038;*/
+    height: 129vh;
+    background-color: #070038;
 }
 
 .parent {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 650px;
-    grid-row: 2/3;
+    grid-template-rows: 100px 560px;
+    grid-row: 1/2;
     grid-column: 2/3;
-    align-self: center;
-    border: 2px solid black;
+    /*border: 2px solid yellow;*/
 }
 
 .heading {
     display: grid;
-    border-bottom: 2px solid black;
+    /*border-bottom: 2px solid black;*/
     grid-row: 1/2;
     grid-column: 1/9;
 }
@@ -28,18 +27,17 @@
 .title {
     align-self: start;
     justify-self: center;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: darkgrey;
+    font-family: Cavendish, cursive;
+    font-size: 40px;
     margin: 0;
-    width: 200px;
+    color: #fff0f6;
     text-align: center;
 }
 
 .Skills {
     display: grid;
     grid-template-columns: 275px 1fr 275px 1fr 275px;
-    grid-template-rows: 275px 1fr 300px;
+    grid-template-rows: 275px 1fr 275px;
     grid-row: 2/3;
     grid-column: 1/9;
 }
@@ -47,40 +45,43 @@
 .skill1 {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
-    grid-template-rows: 100px 1fr 50px 1fr 120px;
+    grid-template-rows: 100px 1fr 70px 100px;
     grid-row: 1/2;
     grid-column: 1/2;
+    color: orangered;
 }
 
 .skill2 {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
-    grid-template-rows: 100px 1fr 50px 1fr 120px;
+    grid-template-rows: 100px 1fr 70px 100px;
     grid-row: 1/2;
     grid-column: 3/4;
+    color: cornflowerblue;
 }
 
 .skill3 {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
-    grid-template-rows: 100px 1fr 50px 1fr 120px;
+    grid-template-rows: 100px 1fr 70px 100px;
     grid-row: 1/2;
     grid-column: 5/6;
+    color: gold;
 }
 
 .skill4 {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
-    grid-template-rows: 100px 1fr 50px 1fr 120px;
+    grid-template-rows: 100px 1fr 70px 100px;
     grid-row: 3/4;
     grid-column: 3/4;
+    color: aqua;
 }
 
 .label {
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 0;
-    background-color: red;
 }
 
 .language {
@@ -95,9 +96,14 @@
 
 .description {
     grid-column: 1/4;
-    grid-row: 5/6;
+    grid-row: 4/5;
     align-self: stretch;
     text-align: center;
     font-size: 16px;
     margin: 0;
+}
+
+@font-face {
+    font-family: Cavendish;
+    src: url('fonts/Cavendish modern.ttf');
 }
