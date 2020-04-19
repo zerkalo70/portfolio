@@ -1,7 +1,7 @@
 .Portfolio {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 88vh 200vh 550px 204px 500px 257px;
+    grid-template-rows: 80px 88vh 143vh 550px 204px 500px 257px;
     /*grid-template-rows: 80px 400px 500px 550px 204px 500px 257px;*/
     grid-template-areas: "header" "myResume" "mySkills" "myJobs" "myFreelance" "myContacts" "myFooter";
     background-color: darkseagreen;
@@ -9,43 +9,55 @@
 
 @media screen and (max-width: 1150px) {
     .Portfolio {
-        grid-template-rows: 80px 88vh 810px 910px 204px 500px 257px;
+        grid-template-rows: 80px 88vh 143vh 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 1060px) {
     .Portfolio {
-        grid-template-rows: 80px 88vh 810px 910px 204px 500px 257px;
+        grid-template-rows: 80px 88vh 143vh 910px 204px 500px 257px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .Portfolio {
+        grid-template-rows: 80px 88vh 143vh 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 960px) {
     .Portfolio {
-        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
+        grid-template-rows: 80px 140vh 143vh 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 800px) {
     .Portfolio {
-        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
+        grid-template-rows: 80px 140vh 143vh 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 750px) {
     .Portfolio {
-        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
+        grid-template-rows: 80px 140vh 143vh 910px 204px 500px 257px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .Portfolio {
+        grid-template-rows: 80px 140vh 247vh 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 670px) {
     .Portfolio {
-        grid-template-rows: 80px 140vh 810px 910px 204px 500px 257px;
+        grid-template-rows: 80px 140vh 247vh 910px 204px 500px 257px;
     }
 }
 
 @media screen and (max-width: 460px) {
     .Portfolio {
-        grid-template-rows: 80px 127vh 810px 910px 204px 500px 257px;
+        grid-template-rows: 80px 127vh 247vh 910px 204px 500px 257px;
     }
 }
 
