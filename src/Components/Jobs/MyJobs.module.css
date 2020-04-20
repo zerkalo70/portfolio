@@ -69,21 +69,21 @@
     background-color: orange;
 }
 
- button {
-     display: grid;
-     grid-template-columns: 1fr 200px 1fr;
-     grid-template-rows: 1fr 40px 30px 1fr;
-     grid-column: 1/2;
-     grid-row: 1/2;
-     color: darkturquoise;
-     background-image: url("Women.jpg");
-     background-size: cover;
+button {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 1fr 40px 30px 1fr;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: darkturquoise;
+    background-image: url("Women.jpg");
+    background-size: cover;
 }
 
- .job2 button {
-     color: blue;
-     background-image: url("Kat.jpg");
- }
+.job2 button {
+    color: blue;
+    background-image: url("Kat.jpg");
+}
 
 .job3 button {
     color: deepskyblue;
@@ -164,11 +164,19 @@ button p:nth-child(2) {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .Jobs {
-        grid-template-columns: 1fr 250px 1fr;
+@media screen and (max-width: 380px) {
+    .myJobs {
+        grid-template-columns: 8% 84% 8%;
     }
 }
+
+
+@media screen and (max-width: 360px) {
+    .myJobs {
+        grid-template-columns: 3% 94% 3%;
+    }
+}
+
 
 
 

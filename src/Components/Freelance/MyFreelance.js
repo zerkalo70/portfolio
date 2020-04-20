@@ -6,8 +6,12 @@ class MyFreelance extends React.Component {
         return (
             <div className={s.myFreelance}>
                 <div className={s.parent}>
-                    <p className={s.textF}>Рассматриваю варианты удалённой работы</p>
-                    <button className={s.hiring}>Нанять меня</button>
+                    <div className={s.heading}>
+                        <h1 className={s.runStr}>
+                            <span>Рассматриваю   варианты   удалённой   работы</span></h1>
+                    </div>
+
+                    <button>Нанять меня</button>
                 </div>
             </div>
         )
