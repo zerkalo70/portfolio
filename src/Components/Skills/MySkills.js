@@ -1,9 +1,9 @@
 import React from "react";
 import s from './MySkills.module.css';
-import html from './html.png';
-import JavaScript from './JavaScript.png';
-import reactJS from './reactJS.png';
-import css from './css.png'
+import html from './images/html.png';
+import JavaScript from './images/JavaScript.png';
+import reactJS from './images/reactJS.png';
+import css from './images/css.png'
 
 class MySkills extends React.Component {
     render = () => {

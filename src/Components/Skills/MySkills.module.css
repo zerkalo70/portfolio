@@ -4,7 +4,7 @@
     grid-template-rows: 95% 5%;
     grid-row: 3/4;
     grid-column: 1/2;
-    height: 143vh;
+    height: 150vh;
     background-color: #070038;
 }
 
@@ -14,7 +14,7 @@
     grid-template-rows: 200px 560px;
     grid-row: 1/2;
     grid-column: 2/3;
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
 }
 
 .heading {
@@ -75,6 +75,7 @@
     grid-row: 3/4;
     grid-column: 3/4;
     color: aqua;
+    /*background-color: green;*/
 }
 
 .label {
@@ -128,7 +129,7 @@
 
 @media screen and (max-width: 710px) {
     .mySkills {
-        height: 247vh;
+        height: 260vh;
     }
 
     .parent {

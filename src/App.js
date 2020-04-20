@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./Components/Header";
 import MyResume from "./Components/Resume/MyResume";
 import MySkills from "./Components/Skills/MySkills";
-import MyJobs from "./Components/MyJobs";
+import MyJobs from "./Components/Jobs/MyJobs";
 import MyFreelance from "./Components/MyFreelance";
 import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
