@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a7a8e022.chunk.css",
-    "main.js": "/portfolio/static/js/main.39835486.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.39835486.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.6561011d.chunk.css",
+    "main.js": "/portfolio/static/js/main.83342684.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.83342684.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
     "static/js/2.699f2334.chunk.js": "/portfolio/static/js/2.699f2334.chunk.js",
     "static/js/2.699f2334.chunk.js.map": "/portfolio/static/js/2.699f2334.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.b2ab77878715332967aadb980cf9d2ca.js": "/portfolio/precache-manifest.b2ab77878715332967aadb980cf9d2ca.js",
+    "precache-manifest.3024dcefc60da92f9b57b2bb7935c394.js": "/portfolio/precache-manifest.3024dcefc60da92f9b57b2bb7935c394.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.a7a8e022.chunk.css.map": "/portfolio/static/css/main.a7a8e022.chunk.css.map",
+    "static/css/main.6561011d.chunk.css.map": "/portfolio/static/css/main.6561011d.chunk.css.map",
     "static/media/MyResume.module.css": "/portfolio/static/media/17526.316bdc67.ttf",
     "static/media/MyFreelance.module.css": "/portfolio/static/media/Cavendish modern.9f122773.ttf",
     "static/media/MyJobs.module.css": "/portfolio/static/media/Women.c5901a19.jpg",
     "static/media/JavaScript.png": "/portfolio/static/media/JavaScript.04fbcc5e.png",
     "static/media/myFoto.jpg": "/portfolio/static/media/myFoto.eff2ed0b.jpg",
-    "static/media/reactJS.png": "/portfolio/static/media/reactJS.d031a2f9.png"
+    "static/media/reactJS.png": "/portfolio/static/media/reactJS.d031a2f9.png",
+    "static/media/telegram.png": "/portfolio/static/media/telegram.a0dd46d4.png",
+    "static/media/vContact.png": "/portfolio/static/media/vContact.38421703.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
     "static/js/2.699f2334.chunk.js",
-    "static/css/main.a7a8e022.chunk.css",
-    "static/js/main.39835486.chunk.js"
+    "static/css/main.6561011d.chunk.css",
+    "static/js/main.83342684.chunk.js"
   ]
 }
