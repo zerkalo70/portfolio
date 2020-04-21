@@ -14,9 +14,9 @@ class Contacts extends React.Component {
                         <input value="input"/>
                         <textarea>textarea</textarea>
                     </form>
-                    <div className={s.send}>
+                    {/*<div className={s.send}>*/}
                         <button>Отправить</button>
-                    </div>
+                    {/*</div>*/}
                 </div>
             </div>
         )

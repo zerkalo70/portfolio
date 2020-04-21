@@ -179,4 +179,9 @@ button p:nth-child(2) {
 
 
 
+@font-face {
+    font-family: Cavendish;
+    src: url('fonts/Cavendish modern.ttf');
+}
+
 

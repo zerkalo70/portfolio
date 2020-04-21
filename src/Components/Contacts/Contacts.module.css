@@ -1,0 +1,87 @@
+.myContacts {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 90% 10%;
+    grid-row: 6/7;
+    grid-column: 1/2;
+    height: 115vh;
+    background-color: #050029;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 260px 100px;
+    align-self: start;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    /*border: 2px solid yellow;*/
+}
+
+.contact {
+    display: grid;
+    grid-area: contact;
+    grid-row: 1/2;
+    grid-column: 1/13;
+}
+
+.title {
+    align-self: center;
+    justify-self: center;
+    font-family: Cavendish, cursive;
+    font-size: 40px;
+    margin: 0;
+    color: #fff0f6;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    grid-template-rows: 1fr 1fr 1fr;
+    /*grid-area: form;*/
+    grid-row: 2/3;
+    grid-column: 3/11;
+}
+
+input {
+    grid-column: 2/3;
+    margin-bottom: 10px;
+    height: 35px;
+    background-color: darkgrey;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+textarea {
+    grid-column: 2/3;
+    /*width: 98%;*/
+    height: 150px;
+    background-color: darkgrey;
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.myContacts button {
+    justify-self: center;
+    grid-row: 3/4;
+    grid-column: 1/13;
+    align-self: end;
+    height: 50px;
+    width: 200px;
+    font-family: Cavendish, cursive;
+    color: #fff0f6;
+    font-size: 25px;
+    background: #0000CD;
+}
+
+
+
+@font-face {
+    font-family: Cavendish;
+    src: url('fonts/Cavendish modern.ttf');
+}
