@@ -6,7 +6,7 @@ import MySkills from "./Components/Skills/MySkills";
 import MyJobs from "./Components/Jobs/MyJobs";
 import MyFreelance from "./Components/Freelance/MyFreelance";
 import Contacts from "./Components/Contacts/Contacts";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 
 
 class App extends React.Component {

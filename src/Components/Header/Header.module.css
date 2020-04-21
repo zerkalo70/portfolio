@@ -6,7 +6,7 @@
     grid-area: header;
     grid-row: 1/2;
     grid-column: 1/2;
-    height: 80px;
+    height: 15vh;
     position: fixed;
     top: 0;
     width: 100%;
