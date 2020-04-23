@@ -11,19 +11,19 @@ class MyJobs extends React.Component {
                         </div>
                         <div className={s.Jobs}>
                             <div className={s.job1}>
-                                    <button>
+                                    <button className={s.btnJob}>
                                         <p>Проект № 1</p>
                                         <p>сайт</p>
                                     </button>
                             </div>
                             <div className={s.job2}>
-                                <button>
+                                <button className={s.btnJob}>
                                     <p>Проект № 2</p>
                                     <p>сайт</p>
                                 </button>
                             </div>
                             <div className={s.job3}>
-                                <button>
+                                <button className={s.btnJob}>
                                     <p>Проект № 3</p>
                                     <p>сайт</p>
                                 </button>

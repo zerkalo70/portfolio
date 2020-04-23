@@ -23,7 +23,7 @@
 .heading {
     display: grid;
     grid-row: 1/2;
-    grid-column: 1/9;
+    grid-column: 1/2;
 }
 
 .runStr  {
@@ -51,9 +51,9 @@
     }
 }
 
-.myFreelance button {
+.btnFree {
     grid-row: 2/3;
-    grid-column: 1/9;
+    grid-column: 1/2;
     justify-self: center;
     width: 200px;
     font-family: Cavendish, cursive;

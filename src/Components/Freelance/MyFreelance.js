@@ -11,7 +11,7 @@ class MyFreelance extends React.Component {
                             <span>Рассматриваю   варианты   удалённой   работы</span></h1>
                     </div>
 
-                    <button>Нанять меня</button>
+                    <button className={s.btnFree}>нанять меня</button>
                 </div>
             </div>
         )

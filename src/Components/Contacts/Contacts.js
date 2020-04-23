@@ -9,14 +9,14 @@ class Contacts extends React.Component {
                     <div className={s.contact}>
                         <p className={s.title}>Контакты</p>
                     </div>
-                    <form className={s.form}>
-                        <input value="input"/>
-                        <input value="input"/>
-                        <textarea>textarea</textarea>
-                    </form>
-                    {/*<div className={s.send}>*/}
-                        <button>Отправить</button>
-                    {/*</div>*/}
+                    <div className={s.Feedback}>
+                        <form className={s.form}>
+                            <input className={s.name} type="text" placeholder="Ваше имя"/>
+                            <input className={s.mail} type="text" placeholder="Email Address"/>
+                            <textarea className={s.comments} placeholder="Ваше сообщение"></textarea>
+                            <input className={s.button} type="button" value="Send"/>
+                        </form>
+                    </div>
                 </div>
             </div>
         )

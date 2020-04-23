@@ -1,67 +1,67 @@
 .Portfolio {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15vh 88vh 150vh 110vh 30vh 115vh 48vh;
+    grid-template-rows: 15vh 88vh 150vh 110vh 30vh 105vh 48vh;
     background-color: darkseagreen;
 }
 
 @media screen and (max-width: 1150px) {
     .Portfolio {
-        grid-template-rows: 15vh 88vh 150vh 110vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 88vh 150vh 110vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 1140px) {
     .Portfolio {
-        grid-template-rows: 15vh 88vh 150vh 175vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 88vh 150vh 175vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 1060px) {
     .Portfolio {
-        grid-template-rows: 15vh 88vh 150vh 175vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 88vh 150vh 175vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 1040px) {
     .Portfolio {
-        grid-template-rows: 15vh 88vh 150vh 175vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 88vh 150vh 175vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 960px) {
     .Portfolio {
-        grid-template-rows: 15vh 140vh 150vh 175vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 140vh 150vh 175vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 800px) {
     .Portfolio {
-        grid-template-rows: 15vh 140vh 150vh 240vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 140vh 150vh 240vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 750px) {
     .Portfolio {
-        grid-template-rows: 15vh 140vh 150vh 240vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 140vh 150vh 240vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 710px) {
     .Portfolio {
-        grid-template-rows: 15vh 140vh 260vh 240vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 140vh 260vh 240vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 670px) {
     .Portfolio {
-        grid-template-rows: 15vh 140vh 247vh 240vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 140vh 247vh 240vh 30vh 105vh 48vh;
     }
 }
 
 @media screen and (max-width: 460px) {
     .Portfolio {
-        grid-template-rows: 15vh 127vh 247vh 240vh 30vh 115vh 48vh;
+        grid-template-rows: 15vh 127vh 247vh 240vh 30vh 105vh 48vh;
     }
 }
 
