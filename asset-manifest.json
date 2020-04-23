@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6561011d.chunk.css",
-    "main.js": "/portfolio/static/js/main.83342684.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.83342684.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.7f7a102f.chunk.css",
+    "main.js": "/portfolio/static/js/main.2473ccb2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2473ccb2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
     "static/js/2.699f2334.chunk.js": "/portfolio/static/js/2.699f2334.chunk.js",
     "static/js/2.699f2334.chunk.js.map": "/portfolio/static/js/2.699f2334.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.3024dcefc60da92f9b57b2bb7935c394.js": "/portfolio/precache-manifest.3024dcefc60da92f9b57b2bb7935c394.js",
+    "precache-manifest.63986ede0a77cc320f382a4798ce14e9.js": "/portfolio/precache-manifest.63986ede0a77cc320f382a4798ce14e9.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.6561011d.chunk.css.map": "/portfolio/static/css/main.6561011d.chunk.css.map",
+    "static/css/main.7f7a102f.chunk.css.map": "/portfolio/static/css/main.7f7a102f.chunk.css.map",
     "static/media/MyResume.module.css": "/portfolio/static/media/17526.316bdc67.ttf",
     "static/media/MyFreelance.module.css": "/portfolio/static/media/Cavendish modern.9f122773.ttf",
     "static/media/MyJobs.module.css": "/portfolio/static/media/Women.c5901a19.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
     "static/js/2.699f2334.chunk.js",
-    "static/css/main.6561011d.chunk.css",
-    "static/js/main.83342684.chunk.js"
+    "static/css/main.7f7a102f.chunk.css",
+    "static/js/main.2473ccb2.chunk.js"
   ]
 }
